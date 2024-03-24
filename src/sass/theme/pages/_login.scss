@@ -1,0 +1,257 @@
+/*---------------------------------------------
+# Login page
+-----------------------------------------------*/
+/*  Authentication Intro */
+.authentication-intro-area {
+    min-height: 428px;
+
+    @include xLarge {
+        min-height: 330px;
+    }
+
+    .groupShape-intro__content {
+        top: 38%;
+        transform: translateY(-65%);
+    }
+
+    .groupShape-intro__shape {
+        left: 48%;
+        top: 90%;
+    }
+
+    .groupShape-intro__text {
+        font-size: 22px;
+        font-weight: 500;
+        @extend .color-dark;
+    }
+
+    &.intro-box {
+        margin: 75px 50px 0;
+
+        @include tab {
+            margin: 75px 25px 0;
+        }
+
+        @include mobileMd {
+            margin: 65px 15px 0;
+        }
+    }
+}
+
+/*  Authentication Intro */
+.page-template-pitchground {
+    &:not(.trheader) {
+        .authentication-intro-area {
+            &.intro-box {
+                margin-top: 0;
+            }
+        }
+    }
+    .authentication-intro-area{
+        overflow: hidden;
+        .banner-shape{
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .regiater-form-wrapper{
+        padding: 57px 85px 40px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 10px 40px rgba(146, 155, 177, 0.20);
+        margin-bottom: 138px;
+        margin-top: -27.78%;
+        display: block;
+        position: relative;
+        @include medium{
+            padding: 45px 40px 30px;
+        }
+        @include mobileSm{
+            padding: 35px 30px 20px;
+            margin-top: -40%;
+        }
+        &__logos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+            @include mobileSm{
+                gap: 10px;
+                margin-top: 10px;
+            }
+            @include mobileXs{
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+        &:after{
+            content: url("../../assets/svg/shapes/authentication-circle-half.svg");
+            position: absolute;
+            top: -15%;
+            right: -20.40%;
+            z-index: -1;
+            animation: float 6s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+            transform: translateY(0px);
+            @include medium{
+                top: -10%;
+                right: -15.40%;
+            }
+            @include mobileLg{
+                top: -5%;
+                right: 10.40%;
+            }
+        }
+        &:before{
+            content: url("../../assets/svg/shapes/shape-circle.svg");
+            position: absolute;
+            bottom: -32%;
+            left: -11.90%;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite;
+            transform: translateY(0px);
+            @include medium{
+                bottom: -25%;
+                left: -8.90%;
+            }
+            @include mobileLg{
+                bottom: -20%;
+                left: 10.90%;
+            }
+        }
+        .form-label{
+            font-size: 16px;
+            font-weight: 500;
+            color: #151826;
+            margin-bottom: 6px;
+        }
+        .form-control{
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #D9DEEC;
+            outline: none;
+            color: #151826;
+            box-shadow:none ;
+            font-size: 16px;
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 300;
+                color: #AEB9CD;
+                line-height: 50px;
+            }
+        }
+        .submit-button{
+            background-color: #834EFF;
+            border-radius: 6px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+            width: 100%;
+        }
+    }
+}
+
+/*  Login Form */
+.form-login {
+    padding: 60px 85px 35px;
+
+    @include tab {
+        padding: 30px 30px 15px;
+    }
+
+    @include mobileLg {
+        padding: 15px;
+    }
+
+    .form-group {
+        &.remember-group {
+            margin: -6px 0 14px;
+
+            @include mobileXs {
+                flex-flow: column;
+                align-items: center;
+            }
+
+            label {
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 0;
+
+                @include mobileXs {
+                    margin-bottom: 5px;
+                }
+
+                input[type="checkbox"] {
+                    width: auto;
+                    height: auto;
+                    margin-right: 10px;
+                }
+            }
+
+            .lost-passLink {
+                position: relative;
+                font-size: 15px;
+                @extend .color-light;
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 5px;
+                    width: 100%;
+                    height: 100%;
+                    content: '';
+                    border-bottom: 1px dashed $lightColor;
+
+                    @include mobileXs {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .edd-login-submit {
+            input[type="submit"] {
+                line-height: 1;
+                @extend .color-white;
+            }
+        }
+    }
+}
+
+
+/* Social Login */
+.nsl-container-buttons {
+    a {
+        max-width: 100% !important;
+    }
+
+    .nsl-button-google {
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba($lightColor, .15) !important;
+    }
+
+    .nsl-button-svg-container {
+        flex: none;
+        padding: 13px 8px !important;
+        border-radius: 6px;
+    }
+
+    .nsl-button-label-container {
+        margin: 0 !important;
+        flex: none !important;
+        padding: 13px 0 !important;
+
+        b {
+            font-weight: 400;
+            @extend .color-text;
+        }
+    }
+}

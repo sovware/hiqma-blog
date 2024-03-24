@@ -1,0 +1,87 @@
+/*-------------------------------------
+#. Section Header
+---------------------------------------*/
+
+
+/* Section Header */
+
+.section-header {
+    margin: 0 auto 50px;
+    @include mobileLg {
+        margin: 0 auto 30px;
+    }
+    @include e("icon") {
+        margin: 0 auto 24px;
+        @include vertical-gradient(#ff60ff, #9731fc);
+    }
+    .sub-title {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include mobileMd {
+            margin-bottom: 8px;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+        line-height: 1.24;
+        margin: 0 auto 20px;
+        @include mobileMd {
+            max-width: 100%;
+            margin: -10px auto 15px;
+        }
+        br {
+            @include medium {
+                display: none;
+            }
+        }
+    }
+    p {
+        @include rfs(20px);
+        br {
+            @include medium {
+                display: none;
+            }
+        }
+    }
+    &.white-header {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @extend .color-white;
+        }
+        p {
+            color: #aeb9cd;
+        }
+    }
+}
+
+.affiliate-process{
+    .section-header {
+        max-width: 770px;
+    }
+}
+
+.section-header {
+    &.theme-small {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 36px;
+            font-weight: 600;
+            @extend .color-dark;
+        }
+    }
+}

@@ -1,0 +1,689 @@
+.color-primary {
+  color: #834EFF;
+}
+
+.bg-primary {
+  background-color: #834EFF !important;
+}
+
+.outline-primary {
+  border: 1px solid #834EFF;
+  color: #834EFF;
+}
+
+.active-color-primary label input:checked + span {
+  background: #834EFF;
+  border-color: #834EFF;
+}
+
+.btn-primary {
+  background-color: #834EFF;
+  border-color: #834EFF;
+}
+
+.color-primary-transparent {
+  color: #F2EDFF;
+}
+
+.bg-primary-transparent {
+  background-color: #F2EDFF !important;
+}
+
+.outline-primary-transparent {
+  border: 1px solid #F2EDFF;
+  color: #F2EDFF;
+}
+
+.active-color-primary-transparent label input:checked + span {
+  background: #F2EDFF;
+  border-color: #F2EDFF;
+}
+
+.btn-primary-transparent {
+  background-color: #F2EDFF;
+  border-color: #F2EDFF;
+}
+
+.color-secondary {
+  color: #00c5bc;
+}
+
+.bg-secondary {
+  background-color: #00c5bc !important;
+}
+
+.outline-secondary {
+  border: 1px solid #00c5bc;
+  color: #00c5bc;
+}
+
+.active-color-secondary label input:checked + span {
+  background: #00c5bc;
+  border-color: #00c5bc;
+}
+
+.btn-secondary {
+  background-color: #00c5bc;
+  border-color: #00c5bc;
+}
+
+.color-secondary-transparent {
+  color: #ebf9fb;
+}
+
+.bg-secondary-transparent {
+  background-color: #ebf9fb !important;
+}
+
+.outline-secondary-transparent {
+  border: 1px solid #ebf9fb;
+  color: #ebf9fb;
+}
+
+.active-color-secondary-transparent label input:checked + span {
+  background: #ebf9fb;
+  border-color: #ebf9fb;
+}
+
+.btn-secondary-transparent {
+  background-color: #ebf9fb;
+  border-color: #ebf9fb;
+}
+
+.color-success {
+  color: #00bb45;
+}
+
+.bg-success {
+  background-color: #00bb45 !important;
+}
+
+.outline-success {
+  border: 1px solid #00bb45;
+  color: #00bb45;
+}
+
+.active-color-success label input:checked + span {
+  background: #00bb45;
+  border-color: #00bb45;
+}
+
+.btn-success {
+  background-color: #00bb45;
+  border-color: #00bb45;
+}
+
+.color-success-transparent {
+  color: #eff9f0;
+}
+
+.bg-success-transparent {
+  background-color: #eff9f0 !important;
+}
+
+.outline-success-transparent {
+  border: 1px solid #eff9f0;
+  color: #eff9f0;
+}
+
+.active-color-success-transparent label input:checked + span {
+  background: #eff9f0;
+  border-color: #eff9f0;
+}
+
+.btn-success-transparent {
+  background-color: #eff9f0;
+  border-color: #eff9f0;
+}
+
+.color-info {
+  color: #0090fd;
+}
+
+.bg-info {
+  background-color: #0090fd !important;
+}
+
+.outline-info {
+  border: 1px solid #0090fd;
+  color: #0090fd;
+}
+
+.active-color-info label input:checked + span {
+  background: #0090fd;
+  border-color: #0090fd;
+}
+
+.btn-info {
+  background-color: #0090fd;
+  border-color: #0090fd;
+}
+
+.color-info-transparent {
+  color: #ebf5fe;
+}
+
+.bg-info-transparent {
+  background-color: #ebf5fe !important;
+}
+
+.outline-info-transparent {
+  border: 1px solid #ebf5fe;
+  color: #ebf5fe;
+}
+
+.active-color-info-transparent label input:checked + span {
+  background: #ebf5fe;
+  border-color: #ebf5fe;
+}
+
+.btn-info-transparent {
+  background-color: #ebf5fe;
+  border-color: #ebf5fe;
+}
+
+.color-warning {
+  color: #ff8f1e;
+}
+
+.bg-warning {
+  background-color: #ff8f1e !important;
+}
+
+.outline-warning {
+  border: 1px solid #ff8f1e;
+  color: #ff8f1e;
+}
+
+.active-color-warning label input:checked + span {
+  background: #ff8f1e;
+  border-color: #ff8f1e;
+}
+
+.btn-warning {
+  background-color: #ff8f1e;
+  border-color: #ff8f1e;
+}
+
+.color-warning-transparent {
+  color: #fff7eb;
+}
+
+.bg-warning-transparent {
+  background-color: #fff7eb !important;
+}
+
+.outline-warning-transparent {
+  border: 1px solid #fff7eb;
+  color: #fff7eb;
+}
+
+.active-color-warning-transparent label input:checked + span {
+  background: #fff7eb;
+  border-color: #fff7eb;
+}
+
+.btn-warning-transparent {
+  background-color: #fff7eb;
+  border-color: #fff7eb;
+}
+
+.color-danger {
+  color: #d72323;
+}
+
+.bg-danger {
+  background-color: #d72323 !important;
+}
+
+.outline-danger {
+  border: 1px solid #d72323;
+  color: #d72323;
+}
+
+.active-color-danger label input:checked + span {
+  background: #d72323;
+  border-color: #d72323;
+}
+
+.btn-danger {
+  background-color: #d72323;
+  border-color: #d72323;
+}
+
+.color-danger-transparent {
+  color: #fff1f3;
+}
+
+.bg-danger-transparent {
+  background-color: #fff1f3 !important;
+}
+
+.outline-danger-transparent {
+  border: 1px solid #fff1f3;
+  color: #fff1f3;
+}
+
+.active-color-danger-transparent label input:checked + span {
+  background: #fff1f3;
+  border-color: #fff1f3;
+}
+
+.btn-danger-transparent {
+  background-color: #fff1f3;
+  border-color: #fff1f3;
+}
+
+.color-text {
+  color: #5c637e;
+}
+
+.bg-text {
+  background-color: #5c637e !important;
+}
+
+.outline-text {
+  border: 1px solid #5c637e;
+  color: #5c637e;
+}
+
+.active-color-text label input:checked + span {
+  background: #5c637e;
+  border-color: #5c637e;
+}
+
+.btn-text {
+  background-color: #5c637e;
+  border-color: #5c637e;
+}
+
+.color-dark {
+  color: #151826;
+}
+
+.bg-dark {
+  background-color: #151826 !important;
+}
+
+.outline-dark {
+  border: 1px solid #151826;
+  color: #151826;
+}
+
+.active-color-dark label input:checked + span {
+  background: #151826;
+  border-color: #151826;
+}
+
+.btn-dark {
+  background-color: #151826;
+  border-color: #151826;
+}
+
+.color-dark-normal {
+  color: #7b839b;
+}
+
+.bg-dark-normal {
+  background-color: #7b839b !important;
+}
+
+.outline-dark-normal {
+  border: 1px solid #7b839b;
+  color: #7b839b;
+}
+
+.active-color-dark-normal label input:checked + span {
+  background: #7b839b;
+  border-color: #7b839b;
+}
+
+.btn-dark-normal {
+  background-color: #7b839b;
+  border-color: #7b839b;
+}
+
+.color-light {
+  color: #929bb1;
+}
+
+.bg-light {
+  background-color: #929bb1 !important;
+}
+
+.outline-light {
+  border: 1px solid #929bb1;
+  color: #929bb1;
+}
+
+.active-color-light label input:checked + span {
+  background: #929bb1;
+  border-color: #929bb1;
+}
+
+.btn-light {
+  background-color: #929bb1;
+  border-color: #929bb1;
+}
+
+.color-light-normal {
+  color: #aeb9cd;
+}
+
+.bg-light-normal {
+  background-color: #aeb9cd !important;
+}
+
+.outline-light-normal {
+  border: 1px solid #aeb9cd;
+  color: #aeb9cd;
+}
+
+.active-color-light-normal label input:checked + span {
+  background: #aeb9cd;
+  border-color: #aeb9cd;
+}
+
+.btn-light-normal {
+  background-color: #aeb9cd;
+  border-color: #aeb9cd;
+}
+
+.color-gray {
+  color: #f8f9fa;
+}
+
+.bg-gray {
+  background-color: #f8f9fa !important;
+}
+
+.outline-gray {
+  border: 1px solid #f8f9fa;
+  color: #f8f9fa;
+}
+
+.active-color-gray label input:checked + span {
+  background: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-gray {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.color-gray-light {
+  color: #f5f7fa;
+}
+
+.bg-gray-light {
+  background-color: #f5f7fa !important;
+}
+
+.outline-gray-light {
+  border: 1px solid #f5f7fa;
+  color: #f5f7fa;
+}
+
+.active-color-gray-light label input:checked + span {
+  background: #f5f7fa;
+  border-color: #f5f7fa;
+}
+
+.btn-gray-light {
+  background-color: #f5f7fa;
+  border-color: #f5f7fa;
+}
+
+.color-gray-deep {
+  color: #ebeef5;
+}
+
+.bg-gray-deep {
+  background-color: #ebeef5 !important;
+}
+
+.outline-gray-deep {
+  border: 1px solid #ebeef5;
+  color: #ebeef5;
+}
+
+.active-color-gray-deep label input:checked + span {
+  background: #ebeef5;
+  border-color: #ebeef5;
+}
+
+.btn-gray-deep {
+  background-color: #ebeef5;
+  border-color: #ebeef5;
+}
+
+.color-gray-dark {
+  color: #d9deec;
+}
+
+.bg-gray-dark {
+  background-color: #d9deec !important;
+}
+
+.outline-gray-dark {
+  border: 1px solid #d9deec;
+  color: #d9deec;
+}
+
+.active-color-gray-dark label input:checked + span {
+  background: #d9deec;
+  border-color: #d9deec;
+}
+
+.btn-gray-dark {
+  background-color: #d9deec;
+  border-color: #d9deec;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.outline-white {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.active-color-white label input:checked + span {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.color-pink {
+  color: #fc368c;
+}
+
+.bg-pink {
+  background-color: #fc368c !important;
+}
+
+.outline-pink {
+  border: 1px solid #fc368c;
+  color: #fc368c;
+}
+
+.active-color-pink label input:checked + span {
+  background: #fc368c;
+  border-color: #fc368c;
+}
+
+.btn-pink {
+  background-color: #fc368c;
+  border-color: #fc368c;
+}
+
+.color-violet {
+  color: #834eff;
+}
+
+.bg-violet {
+  background-color: #834eff !important;
+}
+
+.outline-violet {
+  border: 1px solid #834eff;
+  color: #834eff;
+}
+
+.active-color-violet label input:checked + span {
+  background: #834eff;
+  border-color: #834eff;
+}
+
+.btn-violet {
+  background-color: #834eff;
+  border-color: #834eff;
+}
+
+.gradientHmBanner {
+  background: #FCF5FF;
+  background: linear-gradient(to bottom, #FCF5FF 0%, #FFFFFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FCF5FF", endColorstr="#FFFFFF",GradientType=0);
+}
+
+.gradientPrimary {
+  background: #30CDFF;
+  background: linear-gradient(to bottom, #30CDFF 0%, #4353FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#30CDFF", endColorstr="#4353FF",GradientType=0);
+}
+
+.gradientPrimaryLight {
+  background: #F8F8FF;
+  background: linear-gradient(to bottom, #F8F8FF 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#F8F8FF", endColorstr="#ffffff",GradientType=0);
+}
+
+.gradientPrimaryDiagonal {
+  background: #4353FF;
+  background: linear-gradient(45deg, #4353FF, #30CDFF);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#4353FF", endColorstr="#30CDFF",GradientType=0);
+}
+
+.gradientInfo {
+  background: #6031FF;
+  background: linear-gradient(to bottom, #6031FF 0%, #30CDFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#6031FF", endColorstr="#30CDFF",GradientType=0);
+}
+
+.gradientInfoDiagonal {
+  background: #009BFE;
+  background: linear-gradient(45deg, #009BFE, #00E4F1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#009BFE", endColorstr="#00E4F1",GradientType=0);
+}
+
+.gradientSuccess {
+  background: #009646;
+  background: linear-gradient(to bottom, #009646 0%, #62DE04 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#009646", endColorstr="#62DE04",GradientType=0);
+}
+
+.gradientSuccessReverse {
+  background: #62DE04;
+  background: linear-gradient(to bottom, #62DE04 0%, #009646 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#62DE04", endColorstr="#009646",GradientType=0);
+}
+
+.gradientSuccessDiagonal {
+  background: #62DE04;
+  background: linear-gradient(to bottom, #62DE04 0%, #009646 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#62DE04", endColorstr="#009646",GradientType=0);
+}
+
+.gradientWarning {
+  background: #FF4E95;
+  background: linear-gradient(to bottom, #FF4E95 0%, #FA8B0C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FF4E95", endColorstr="#FA8B0C",GradientType=0);
+}
+
+.gradientWarningDiagonal {
+  background: #FF4E95;
+  background: linear-gradient(45deg, #FF4E95, #FA8B0C);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FF4E95", endColorstr="#FA8B0C",GradientType=0);
+}
+
+.gradientWarningReverse {
+  background: #FA8B0C;
+  background: linear-gradient(to bottom, #FA8B0C 0%, #FF4E95 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FA8B0C", endColorstr="#FF4E95",GradientType=0);
+}
+
+.gradientSecondary {
+  background: #00A899;
+  background: linear-gradient(to bottom, #00A899 0%, #01DFD5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00A899", endColorstr="#01DFD5",GradientType=0);
+}
+
+.gradientSecondaryReverse {
+  background: #01DFD5;
+  background: linear-gradient(to bottom, #01DFD5 0%, #00A899 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#01DFD5", endColorstr="#00A899",GradientType=0);
+}
+
+.gradient1 {
+  background: #4F55C8;
+  background: linear-gradient(to bottom, #4F55C8 0%, #8E93FA 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#4F55C8", endColorstr="#8E93FA",GradientType=0);
+}
+
+.gradientViolet {
+  background: #7B43FF;
+  background: linear-gradient(to bottom, #7B43FF 0%, #FC5C9C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7B43FF", endColorstr="#FC5C9C",GradientType=0);
+}
+
+.gradientVioletDiagonal {
+  background: #7B43FF;
+  background: linear-gradient(45deg, #7B43FF, #FC5C9C);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7B43FF", endColorstr="#FC5C9C",GradientType=0);
+}
+
+.gradientVioletReverse {
+  background: #FC5C9C;
+  background: linear-gradient(to bottom, #FC5C9C 0%, #7B43FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FC5C9C", endColorstr="#7B43FF",GradientType=0);
+}
+
+.gradientLightBlue {
+  background: #8E93FA;
+  background: linear-gradient(to bottom, #8E93FA 0%, #4F55C8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#8E93FA", endColorstr="#4F55C8",GradientType=0);
+}
+
+.gradientBlue {
+  background: #B574FF;
+  background: linear-gradient(to bottom, #B574FF 0%, #1722FE 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#B574FF", endColorstr="#1722FE",GradientType=0);
+}
+
+.gradientDanger {
+  background: #FF0000;
+  background: linear-gradient(to bottom, #FF0000 0%, #FF60A5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FF0000", endColorstr="#FF60A5",GradientType=0);
+}
+
+.logo-brand-gradient1 {
+  background: #D07EFF;
+  background: linear-gradient(to bottom, #D07EFF 0%, #834EFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#D07EFF", endColorstr="#834EFF",GradientType=0);
+}
+
+.logo-brand-gradient2 {
+  background: #FCAF17;
+  background: linear-gradient(to bottom, #FCAF17 0%, #FC5469 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FCAF17", endColorstr="#FC5469",GradientType=0);
+}/*# sourceMappingURL=mixins.css.map */

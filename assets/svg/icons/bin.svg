@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="29.175" viewBox="0 0 33 29.175">
+  <g id="Group_3280" data-name="Group 3280" transform="translate(-105 -105.001)">
+    <path class="bin_bottom" id="Path_3355" data-name="Path 3355" d="M130.02,265.2l3.126,10.965a.972.972,0,0,0,.934.706h19.412a.972.972,0,0,0,.934-.706l3.127-10.965Zm8.913,8.753a.971.971,0,1,1-1.941,0v-5.835a.971.971,0,1,1,1.941,0Zm5.824,0a.971.971,0,1,1-1.941,0v-5.835a.971.971,0,1,1,1.941,0Zm5.824,0a.971.971,0,1,1-1.941,0v-5.835a.971.971,0,1,1,1.941,0Z" transform="translate(-22.286 -142.693)" fill="#4353ff"/>
+    <g id="Group_3279" data-name="Group 3279" transform="translate(105 105.001)" opacity="0.4">
+      <path class="bin_top" id="Path_3356" data-name="Path 3356" d="M137.03,194H105.971a.971.971,0,0,0-.971.973v3.89a.971.971,0,0,0,.971.973h31.059a.971.971,0,0,0,.971-.973v-3.89a.971.971,0,0,0-.97-.973Z" transform="translate(-105 -184.274)" fill="#4353ff"/>
+      <path class="bin_stick" id="Path_3357" data-name="Path 3357" d="M166.787,106.588a.972.972,0,1,0-1.516-1.216l-5.921,7.416h2.487Z" transform="translate(-153.411 -105.008)" fill="#4353ff"/>
+      <path class="bin_stick" id="Path_3358" data-name="Path 3358" d="M287.809,112.781H290.3l-5.921-7.416a.972.972,0,1,0-1.516,1.216Z" transform="translate(-263.235 -105.001)" fill="#4353ff"/>
+    </g>
+  </g>
+</svg>

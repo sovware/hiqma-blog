@@ -1,0 +1,9 @@
+sftp-config.json
+package-lock.json
+todo.txt
+testing.html
+.DS_Store
+plugin-bundle/*.zip
+node_modules/
+.idea/
+__*/

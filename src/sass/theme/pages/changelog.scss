@@ -1,0 +1,103 @@
+/*  Changelog Accordion */
+.changelog-accordion__single{
+    .card{
+        border-radius: 6px;
+    }
+    .card-header{
+        padding: 15px 30px 18px;
+        border-radius:  6px 6px 0 0;
+        cursor: pointer;
+        a{
+            cursor: pointer;
+            line-height: 1.33;
+            i{
+                color: #7B839B;
+                &:before{
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        .log-id{
+            margin-right: 8px;
+        }
+        .log-date{
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 16px;
+            position: relative;
+            @extend .color-text;
+            &:before{
+                position: absolute;
+                width: 10px;
+                height: 1px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                @extend .bg-text;
+            }
+        }
+    }
+    .card-body{
+        padding: 20px 30px 20px 30px;
+    }
+}
+
+.changelog-info__single{
+    .badge{
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 14px;
+    }
+    .changelog-info{
+        @include e("list"){
+            li{
+                display: flex;
+                &:not(:last-child){
+                    margin-bottom: 4px;
+                }
+                .atbd-dot{
+                    margin-right: 12px;
+                    position: relative;
+                    top: 10px;
+                }
+                .changelog-info__text{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.changelog-accordion{
+    padding-bottom: 10px;
+}
+
+.changelog-accordion__single{
+    padding: 10px 18px;
+    .badge{
+        font-size: 11px;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+}
+
+.changelog-history{
+    .modal-header{
+        margin-bottom: 15px;
+        .modal-title{
+            color: $darkColor;
+        }
+        .btn-close{
+            padding: 0;
+            position: relative;
+            top: 10px;
+            right: 10px;
+            &:hover{
+                background-color: transparent;
+                color: $dangerColor;
+            }
+        }
+    }
+}

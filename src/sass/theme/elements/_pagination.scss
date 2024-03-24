@@ -1,0 +1,47 @@
+// Pagination Css
+.wpwax_pagination{
+    margin-top: 30px;
+    ul{
+        margin: -4px;
+        li{
+            display: inline-block;
+            margin: 4px;
+            a{
+                font-size: 14px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 2.9;
+                padding: 0 17.58px;
+                border-radius: 6px;
+                box-shadow: 0 2px 3px rgba($lightColor,.15);
+                @extend .bg-white;
+                @extend .color-text;
+                @include mobileSm{
+                    line-height: 2.1;
+                    padding: 0 12px;
+                }
+                &.prev,
+                &.next{
+                    width: 40px;
+                    height: 40px;
+                    @include mobileSm{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                &:hover,
+                &.active{
+                    @extend .color-white;
+                    @extend .bg-primary;
+                }
+                i{
+                    font-size: 14px;
+                    &:before{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

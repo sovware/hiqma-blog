@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102.212" height="19" viewBox="0 0 102.212 19">
+  <g id="Group_5183" data-name="Group 5183" transform="translate(-536.788 -349)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="73" height="19" rx="3" transform="translate(566 349)" fill="#00bb45"/>
+    <text id="Save_30_" data-name="Save 30%" transform="translate(571 363)" fill="#fff" font-size="11" font-family="BergenNeue-SemiBold, Bergen Neue" font-weight="600" letter-spacing="0.15em"><tspan x="0" y="0">SAVE 30%</tspan></text>
+    <g id="Group_3830" data-name="Group 3830" transform="matrix(0.559, -0.829, 0.829, 0.559, 536.198, 365.308)">
+      <path id="Path_3492" data-name="Path 3492" d="M0,8.961S15.123,15.95,18.2,0" transform="matrix(-0.469, -0.883, 0.883, -0.469, 13.353, 19.137)" fill="none" stroke="#00bb45" stroke-linecap="round" stroke-width="2" stroke-dasharray="3"/>
+      <path id="Polygon_5" data-name="Polygon 5" d="M3.52,0l3.52,6.213H0Z" transform="translate(2.533 6.983) rotate(-104)" fill="#00bb45"/>
+    </g>
+  </g>
+</svg>

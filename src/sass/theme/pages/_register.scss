@@ -1,0 +1,17 @@
+/*---------------------------------------------
+# Login page
+-----------------------------------------------*/
+
+/*  Login Form */
+.form-register{
+    padding: 60px 85px 15px;
+    @include tab{
+        padding: 30px 30px 15px;
+    }
+    @include mobileLg{
+        padding: 15px;
+    }
+    .form-devider-line{
+        margin: 20px 0 20px;
+    }
+}

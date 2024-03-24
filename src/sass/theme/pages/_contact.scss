@@ -1,0 +1,221 @@
+/*---------------------------------------------
+#. Contact
+-----------------------------------------------*/
+.contact-intro-content {
+  min-height: 700px;
+  @include tab {
+    min-height: 440px;
+  }
+  &.gradient-bg {
+    position: relative;
+    z-index: -1;
+    background: rgb(254, 250, 241);
+    background: -moz-linear-gradient(
+      top,
+      rgba(254, 250, 241, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(254, 250, 241, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(254, 250, 241, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefaf1', endColorstr='#ffffff',GradientType=0 );
+  }
+  .contact-intro-text {
+    font-size: 20px;
+  }
+}
+/*  Contact Intro */
+.has-discount-banner {
+  .groupShape-intro {
+    min-height: 564px;
+  }
+}
+.groupShape-intro {
+  background-color: #f8f8ff;
+  position: relative;
+  min-height: 500px;
+  @include tab {
+    min-height: 380px;
+  }
+  @include mobileLg {
+    min-height: 300px;
+  }
+  .shape-curve {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+  }
+  @include e("content") {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-85%);
+    @include tab {
+      transform: translateY(-55%);
+    }
+    @include mobileLg {
+      transform: translateY(-50%);
+    }
+  }
+  @include e("shape") {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include e("text") {
+    font-size: 20px;
+    margin: -10px 0 0;
+  }
+}
+.contact-form-box {
+  margin-top: -280px;
+  padding: 80px 60px;
+  background-color: #fff;
+  position: relative;
+  @include mobileLg {
+    padding: 30px;
+  }
+  .shape.shape-top {
+    right: -100px;
+    top: -80px;
+    @include tab {
+      display: none;
+    }
+  }
+  .shape.shape-bottom {
+    right: -140px;
+    bottom: -140px;
+    left: auto;
+    @include tab {
+      display: none;
+    }
+    img {
+      max-width: 350px;
+    }
+  }
+  textarea {
+    min-height: 170px;
+    resize: none;
+  }
+  .wpcf7-submit {
+    padding: 0 50.25px;
+    width: auto;
+    background-color: $pink;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.contact-form-box {
+  max-width: 725px;
+  margin: -158px auto auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px rgba($lightColor, 0.15);
+  @extend .bg-white;
+  @include tab {
+    padding: 30px;
+    margin: -100px auto auto;
+  }
+  @include mobileLg {
+    margin: -60px auto auto;
+  }
+  @include e("tab") {
+    .formbox-tabmenu {
+      @include tab {
+        justify-content: center;
+      }
+      @include e("item") {
+        display: inline-block;
+        margin-bottom: 15px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        a {
+          min-width: 108px;
+          border-radius: 6px;
+          font-size: 15px;
+          display: flex;
+          flex-flow: column;
+          padding: 22px 20px;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 10px 30px rgba($lightColor, 0.12);
+          @extend .bg-white;
+          @extend .color-text;
+          @include tab {
+            padding: 15px;
+          }
+          span {
+            display: block;
+          }
+          .bin_bottom {
+            fill: $lightColor;
+          }
+          .bin_top {
+            fill: $lightColor;
+          }
+          .bin_stick {
+            fill: $lightColor;
+          }
+          .formbox-tabmenu__text {
+            margin-top: 12px;
+          }
+          &.active {
+            @extend .bg-primary;
+            @extend .color-white;
+            svg path,
+            i,
+            span {
+              opacity: 1s;
+              fill: #ffffff;
+              @extend .color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include e("body") {
+    margin-top: 25px;
+    .contact-form-content {
+      .form-element {
+        &:not(:last-child) {
+          margin-bottom: 35px;
+        }
+        button {
+          min-width: 152px;
+        }
+        input[type="submit"] {
+          width: auto;
+          padding: 0 50px;
+          .btn {
+            &.btn-raised {
+              box-shadow: 0 10px 15px rgba($primaryColor, 0.15);
+            }
+          }
+          @extend .color-white;
+        }
+      }
+      textarea {
+        min-height: 170px;
+        resize: none;
+      }
+    }
+  }
+}

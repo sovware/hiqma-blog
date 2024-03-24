@@ -1,0 +1,210 @@
+/*  Testimonial Inro */
+.testimonial-intro-box{
+    position: relative;
+    margin: 75px 50px 0;
+    @include tab{
+        margin: 65px 25px 0;
+    }
+    .banner-shape{
+        svg{
+            height: 450px !important;
+            @include xLarge{
+                height: 390px !important;
+            }
+            @include tab{
+                height: 550px !important;
+            }
+            @include mobileSm{
+                height: 440px !important;
+            }
+            @include mobileXs{
+                height: 360px !important;
+            }
+        }
+    }
+    .testimonial-intro-content{
+        min-height: 430px;
+        max-width: 570px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        @include tab{
+            padding-top: 50px;
+            min-height: auto;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            font-weight: 500;
+            line-height: 1.04;
+        }
+    }
+    .testimonial-intro-image{
+        position: absolute;
+        right: -18%;
+        top: 40px;
+        @include xLarge{
+            right: -10%;
+        }
+        @include large{
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include medium{
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        @include tab{
+            text-align: center;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        &.mt-40{
+            @include tab{
+                margin-top: 10px;
+            }
+        }
+        img{
+            @include xLarge{
+                max-width: 80%;
+            }
+            @include large{
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+/*  Client Speech */
+.client-speech-area{
+    @include large{
+        padding-top: 50px !important;
+    }
+}
+.client-speech-shape{
+    left: -45px;
+    top: -50px;
+    @include large{
+        left: -5px;
+    }
+    @include tab{
+        display: none;
+    }
+}
+.client-speech-item{
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(#C8BAD2,.20);
+    border-radius: 8px;
+    padding: 30px 30px 35px;
+    margin-bottom: 30px;
+    min-height: 458px;
+    @extend .bg-white;
+    .btn-close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 0;
+        z-index: 999;
+        display: inline-flex;
+        align-items: center;
+        &:hover{
+            background: transparent;
+        }
+        i,
+        svg,
+        span{
+            font-size: 24px;
+            @extend .color-danger;
+        }
+    }
+    .shape{
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+    }
+    @include e("quote"){
+        display: inline-block;
+        margin-bottom: 22px;
+        svg,
+        i,
+        span{
+            width: 50px;
+            height: 34px;
+        }
+        &.quote-deep{
+            svg{
+                >g{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    @include e("content"){
+        font-size: 18px;
+        line-height: 1.667;
+        font-weight: 300;
+        min-height: 265px;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            font-size: 22px;
+            line-height: 1.364;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .btn-link{
+            padding: 0;
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 6px;
+            text-decoration: underline;
+            @extend .bg-white;
+            &:after{
+                display: none;
+            }
+        }
+    }
+    @include e("author"){
+        margin-top: 26px;
+        img{
+            max-width: 50px;
+            border-radius: 50%;
+        }
+        .author-info {
+            margin-left: 15px;
+            .author-name{
+                margin-left: 0;
+                @extend .color-text;
+            }
+            span{
+                display: block;
+                line-height: 1.4;
+                &.author-location{
+                    @extend .color-light;
+                }
+            }
+        }
+    }
+}
+
+// Testimonial Modal More Speech
+.modal-moreSpeech{
+    @include e("content"){
+        border-radius: 8px;
+        .client-speech-item{
+            margin-bottom: 0;
+            .client-speech-item__content{
+                min-height: 100%;
+            }
+        }
+    }
+}

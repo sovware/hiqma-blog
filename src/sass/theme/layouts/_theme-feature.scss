@@ -1,0 +1,139 @@
+/*  Theme Feature */
+.theme-feature-box{
+    box-shadow: 0 30px 50px rgba(#C09ED6,.15);
+    padding: 85px 50px 35px;
+    border-radius: 10px;
+    @extend .bg-white;
+    @include mobileLg{
+        padding: 30px;
+    }
+    .shape{
+        right: -160px;
+        bottom: -120px;
+        @include xLarge{
+            right: -80px;
+            bottom: -100px;
+        }
+        @include large{
+            display: none;
+        }
+        #circle-shape{
+            opacity: .07;
+        }
+    }
+}
+
+.theme-feature-item{
+    margin-bottom: 60px;
+    @include tab{
+        max-width: 370px;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+    @include e("icon"){
+        margin-bottom: 25px;
+        @include tab{
+            margin: 0 auto 25px;
+        }
+        opacity: .80;
+        &.gradientVioletReverse{
+            box-shadow: 0 10px 10px rgba(#9C69F8,.20)
+        }
+        &.gradientWarningReverse{
+            box-shadow: 0 10px 10px rgba(#FA7BB0,.20)
+        }
+        &.gradientInfo{
+            box-shadow: 0 10px 10px rgba(#667BFF,.20)
+        }
+        &.gradientLightBlue{
+            box-shadow: 0 10px 10px rgba(#7479D4,.20)
+        }
+        &.gradientBlue{
+            box-shadow: 0 10px 15px rgba(#834EFF,.20)
+        }
+        &.gradientSecondaryReverse{
+            box-shadow: 0 10px 10px rgba(#32BDB1,.20)
+        }
+        &.gradientSuccessReverse{
+            box-shadow: 0 10px 10px rgba(#36AD67,.20)
+        }
+        &.gradientDanger{
+            box-shadow: 0 10px 10px rgba(#FF346B,.20)
+        }
+    }
+    @include e("content"){
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            margin-bottom: 18px;
+        }
+        p{
+            margin-bottom: 0;
+            @include medium{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Theme Feature Counter
+.theme-feature-counter{
+    margin: 105px -7px -7px;
+    @include tab{
+        flex-wrap: wrap;
+        margin: 75px -7px -7px;
+    }
+    @include mobileLg{
+        margin: 55px -7px -7px;
+    }
+    &.justify-content-between{
+        @include tab{
+            justify-content: center !important;
+        }
+    }
+    @include e(single){
+        width: 25%;
+        flex: 0 0 25%;
+        padding: 50px 0 44px;
+        margin: 15px 7px;
+        border-radius: 5px;
+        max-width: 232px;
+        @include tab{
+            width: 50%;
+            flex: 0 0 50%;
+        }
+        @include mobileMd{
+            width: 100%;
+            flex: 0 0 100%;
+        }
+        &.gradient-pink{
+            @include vertical-gradient(#FFF3FA,#FFFFFF);
+        }
+        &.gradient-warning{
+            @include vertical-gradient(#FFFFFF,#FFFBF6);
+        }
+        &.gradient-primary{
+            @include vertical-gradient(#FBF6FF,#FFFFFF);
+        }
+        &.gradient-success{
+            @include vertical-gradient(#FFFFFF,#F3FFF3);
+        }
+    }
+    @include e(content){
+        margin-top: 15px;
+        span{
+            font-size: 36px;
+            font-weight: 600;
+            @extend .color-dark;
+        }
+        .count-text{
+            margin: 0px;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.career-intro {
+  &.pt-190 {
+    @include medium {
+      padding-top: 120px;
+    }
+    @include tab {
+      padding-top: 100px;
+    }
+  }
+  &.pb-70 {
+    @include mobileLg {
+      padding-bottom: 30px;
+    }
+  }
+}
+.about-brif-area {
+  &.pt-140 {
+    @include medium {
+      padding-top: 80px;
+    }
+    @include tab {
+      padding-top: 60px;
+    }
+    @include mobileLg {
+      padding-top: 30px;
+    }
+  }
+  &.pb-135 {
+    @include medium {
+      padding-bottom: 85px;
+    }
+    @include tab {
+      padding-bottom: 80px;
+    }
+    @include tab {
+      padding-bottom: 60px;
+    }
+  }
+}
+.brif-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+    @include mobileLg {
+      font-size: 18px;
+    }
+    br {
+      @include medium {
+        display: none;
+      }
+    }
+  }
+}
+
+.brif-img {
+  @include tab {
+    margin-bottom: 30px;
+  }
+}
+
+.inside-gallery,
+.circular-area {
+  &.pt-130 {
+    @include medium {
+      padding-top: 90px;
+    }
+    @include tab {
+      padding-top: 80px;
+    }
+    @include mobileLg {
+      padding-top: 60px;
+    }
+  }
+}

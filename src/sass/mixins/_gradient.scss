@@ -1,0 +1,105 @@
+@mixin vertical-gradient($from, $to){
+    background: $from;
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0);
+}
+
+@mixin diagonal-gradient($from, $to){
+    background: $from;
+    background: -moz-linear-gradient(45deg,$from,$to);
+    background: -webkit-linear-gradient(45deg,$from,$to);
+    background: linear-gradient(45deg,$from,$to);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0);
+}
+  
+.gradientHmBanner{
+    @include vertical-gradient(#FCF5FF,#FFFFFF);
+}
+
+.gradientPrimary{
+    @include vertical-gradient(#30CDFF,#4353FF);
+}
+  
+.gradientPrimaryLight{
+    @include vertical-gradient(#F8F8FF,#ffffff);
+}
+  
+.gradientPrimaryDiagonal{
+    @include diagonal-gradient(#4353FF,#30CDFF);
+}
+  
+.gradientInfo{
+    @include vertical-gradient(#6031FF,#30CDFF);
+}
+  
+.gradientInfoDiagonal{
+    @include diagonal-gradient(#009BFE,#00E4F1);
+}
+  
+.gradientSuccess{
+    @include vertical-gradient(#009646,#62DE04);
+}
+  
+.gradientSuccessReverse{
+    @include vertical-gradient(#62DE04,#009646);
+}
+  
+.gradientSuccessDiagonal{
+    @include vertical-gradient(#62DE04,#009646);
+}
+
+  
+.gradientWarning{
+    @include vertical-gradient(#FF4E95,#FA8B0C);
+}
+.gradientWarningDiagonal{
+    @include diagonal-gradient(#FF4E95,#FA8B0C);
+}
+  
+.gradientWarningReverse{
+    @include vertical-gradient(#FA8B0C,#FF4E95);
+}
+
+.gradientSecondary{
+    @include vertical-gradient(#00A899,#01DFD5);
+}
+
+.gradientSecondaryReverse{
+    @include vertical-gradient(#01DFD5,#00A899);
+}
+  
+.gradient1{
+    @include vertical-gradient(#4F55C8,#8E93FA);
+}
+
+.gradientViolet{
+    @include vertical-gradient(#7B43FF,#FC5C9C);
+}
+
+.gradientVioletDiagonal{
+    @include diagonal-gradient(#7B43FF,#FC5C9C);
+}
+
+.gradientVioletReverse{
+    @include vertical-gradient(#FC5C9C,#7B43FF);
+}
+
+.gradientLightBlue{
+    @include vertical-gradient(#8E93FA,#4F55C8);
+}
+
+.gradientBlue{
+    @include vertical-gradient(#B574FF,#1722FE);
+}
+
+.gradientDanger{
+    @include vertical-gradient(#FF0000,#FF60A5);
+}
+.logo-brand-gradient1{
+    @include vertical-gradient(#D07EFF,#834EFF);
+}
+.logo-brand-gradient2{
+    @include vertical-gradient(#FCAF17,#FC5469);
+}

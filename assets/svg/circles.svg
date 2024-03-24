@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="743" height="674" viewBox="0 0 743 674">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff1d80"/>
+      <stop offset="1" stop-color="#9b24df"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_4834" data-name="Group 4834" transform="translate(-193 -1167)">
+    <ellipse id="Ellipse_34" data-name="Ellipse 34" cx="107.5" cy="107" rx="107.5" ry="107" transform="translate(343 1317)" opacity="0.08" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_36" data-name="Ellipse 36" cx="98" cy="98" r="98" transform="translate(590 1317)" fill="#483bff" opacity="0.08"/>
+    <ellipse id="Ellipse_35" data-name="Ellipse 35" cx="102" cy="103" rx="102" ry="103" transform="translate(478 1485)" fill="#1ec659" opacity="0.08"/>
+  </g>
+</svg>

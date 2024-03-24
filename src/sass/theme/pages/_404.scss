@@ -1,0 +1,15 @@
+/*---------------------------------------------
+# 404 page
+-----------------------------------------------*/
+.error-page{
+    .error-code{
+        font-size: 80px;
+        font-weight: 600;
+        margin: 45px 0 35px;
+        @extend .color-light-normal;
+    }
+    h5{
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}

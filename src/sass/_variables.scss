@@ -1,0 +1,78 @@
+$bodyColor: #7a82a6;
+$primaryColor: #834EFF;
+$primaryTransparent: #F2EDFF;
+$secondaryColor: #00c5bc;
+$secondaryTransparent: #ebf9fb;
+$successColor: #00bb45;
+$successTransparent: #eff9f0;
+$infoColor: #0090fd;
+$infoTransparent: #ebf5fe;
+$warningColor: #ff8f1e;
+$warningTransparent: #fff7eb;
+$darkColor: #151826;
+$darkDeep: #5c637e;
+$darkNormal: #7b839b;
+$dangerColor: #d72323;
+$dangerTransparent: #fff1f3;
+$textColor: #5c637e;
+$lightNormal: #aeb9cd;
+$lightColor: #929bb1;
+$lighter: #626ca2;
+$grayNormal: #f8f9fa;
+$grayLight: #f5f7fa;
+$graydeep: #ebeef5;
+$graydark: #d9deec;
+$white: #ffffff;
+$pink: #fc368c;
+$violet: #834eff;
+
+// Resposnsive Device Size
+$desktop: #{"max-width: 1199.98px"};
+$tablet: #{"max-width: 991.98px"};
+$mobile: #{"max-width: 767.98px"};
+$small: #{"max-width: 575.98px"};
+$vsmall: #{"max-width: 479.98px"};
+
+// Mixins
+@mixin ul0() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+$theme-colors: (
+  "primary": $primaryColor,
+  "primary-transparent": $primaryTransparent,
+  "secondary": $secondaryColor,
+  "secondary-transparent": $secondaryTransparent,
+  "success": $successColor,
+  "success-transparent": $successTransparent,
+  "info": $infoColor,
+  "info-transparent": $infoTransparent,
+  "warning": $warningColor,
+  "warning-transparent": $warningTransparent,
+  "danger": $dangerColor,
+  "danger-transparent": $dangerTransparent,
+  "text": $textColor,
+  "dark": $darkColor,
+  "dark-normal": $darkNormal,
+  "light": $lightColor,
+  "light-normal": $lightNormal,
+  "gray": $grayNormal,
+  "gray-light": $grayLight,
+  "gray-deep": $graydeep,
+  "gray-dark": $graydark,
+  "white": $white,
+  "pink": $pink,
+  "violet": $violet,
+);
+
+//transition
+$transition-base: 0.3s ease;
+
+//social colors
+$facebook: #3a589b;
+$twitter: #1da1f2;
+$pinterest: #bd081c;
+$linkedin: #0077b5;
+$copy: #42465d;

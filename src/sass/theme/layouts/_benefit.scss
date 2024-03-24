@@ -1,0 +1,103 @@
+/*---------------------------------------------
+#. Benefit Css
+-----------------------------------------------*/
+.benefit-box {
+  margin-bottom: -30px;
+}
+.benifit-single {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  @include tab {
+    padding: 15px;
+  }
+  &.pink {
+    background-color: rgba($pink, 0.1);
+  }
+  &.primary {
+    background-color: rgba($primaryColor, 0.1);
+  }
+  &.success {
+    background-color: rgba($successColor, 0.1);
+  }
+  &.warning {
+    background-color: rgba($warningColor, 0.1);
+  }
+  &.info {
+    background-color: rgba($infoColor, 0.1);
+  }
+  &.violet {
+    background-color: rgba($violet, 0.1);
+  }
+  @include e(inner) {
+    min-height: 364px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    @include tab {
+      padding: 30px;
+    }
+  }
+  @include e(content) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 18px 0 16px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.benifit-single {
+  @include e(icon) {
+    .icon-box {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      &.box-pink {
+        background-color: rgba($pink, 0.1);
+        svg path {
+          fill: $pink;
+        }
+      }
+      &.box-primary {
+        background-color: rgba($primaryColor, 0.1);
+        svg path {
+          fill: $primaryColor;
+        }
+      }
+      &.box-success {
+        background-color: rgba($successColor, 0.1);
+        svg path {
+          fill: $successColor;
+        }
+      }
+      &.box-warning {
+        background-color: rgba($warningColor, 0.1);
+        svg path {
+          fill: $warningColor;
+        }
+      }
+      &.box-violet {
+        background-color: rgba($violet, 0.1);
+        svg path {
+          fill: $violet;
+        }
+      }
+      &.box-info {
+        background-color: rgba($infoColor, 0.1);
+        svg path {
+          fill: $infoColor;
+        }
+      }
+    }
+  }
+}

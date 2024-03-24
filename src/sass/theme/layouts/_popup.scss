@@ -1,0 +1,343 @@
+// Design 1 - Call To Action
+
+[data-notification-id="7"] .altumcode-wrapper {
+	padding: 0 !important;
+}
+
+[data-notification-id="7"] .altumcode-button-modal-header {
+	display: none !important;
+}
+
+[data-notification-id="7"] .altumcode-button-modal-content {
+	padding: 0 !important;
+}
+
+[data-notification-id="7"] .altumcode-button-modal-image {
+	max-height: 516px !important;
+	border-radius: 20px 20px 0 0 !important;
+	margin-bottom: 0 !important;
+	background-color: #000000;
+}
+
+@media (max-width: 652px) {
+	[data-notification-id="7"] .altumcode-button-modal-image {
+		width: 100% !important;
+		max-height: 290px !important;
+	}
+}
+
+@media (min-width: 652px) {
+	[data-notification-id="7"] .altumcode-button-modal-wrapper {
+		max-width: 750px !important;
+	}
+}
+
+[data-notification-id="7"] .altumcode-wrapper-rounded {
+	border-radius: 20px !important;
+}
+
+[data-notification-id="7"] .altumcode-button-modal-description {
+	text-align: center !important;
+	font-size: 38px !important;
+	font-family: inherit !important;
+	font-style: normal;
+	font-weight: 700 !important;
+	line-height: 50px !important;
+	margin-bottom: 40px !important;
+	padding: 0 60px !important;
+	word-break: break-word;
+	margin-top: 60px !important;
+}
+
+@media (max-width: 757px) {
+	[data-notification-id="7"] .altumcode-button-modal-description {
+		padding: 0 40px !important;
+	}
+}
+
+@media (max-width: 652px) {
+	[data-notification-id="7"] .altumcode-button-modal-description {
+		margin-top: 40px !important;
+		font-size: 26px !important;
+		padding: 0 25px !important;
+	}
+}
+
+
+@media (max-width: 480px) {
+	[data-notification-id="7"] .altumcode-button-modal-description {
+		margin-top: 20px !important;
+		font-size: 22px !important;
+		margin-bottom: 20px !important;
+	}
+}
+
+
+[data-notification-id="7"] .altumcode-button-modal-button-wrapper {
+	width: 100% !important;
+	padding: 0 77px 80px !important;
+}
+
+
+
+@media (max-width: 757px) {
+	[data-notification-id="7"] .altumcode-button-modal-button-wrapper {
+		width: 100% !important;
+		padding: 0 60px 60px !important;
+	}
+}
+
+@media (max-width: 652px) {
+	[data-notification-id="7"] .altumcode-button-modal-button-wrapper {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 480px) {
+	[data-notification-id="7"] .altumcode-button-modal-button-wrapper {
+		width: 100% !important;
+		padding: 0 40px 40px !important;
+	}
+}
+
+[data-notification-id="7"] .altumcode-button-modal-button {
+	text-align: center !important;
+	margin-bottom: 16px !important;
+	height: 80px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 14px !important;
+	font-size: 30px !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.9px;
+	text-transform: capitalize;
+	margin-bottom: 0 !important;
+}
+
+@media (max-width: 652px) {
+	[data-notification-id="7"] .altumcode-button-modal-button {
+		height: 70px !important;
+		font-size: 20px !important;
+	}
+}
+
+
+[data-notification-id="7"] .altumcode-button-modal-wrapper .altumcode-close {
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50% !important;
+	background-color: white !important;
+	opacity: 1 !important;
+	right: 30px !important;
+	top: 30px !important;
+	font-size: 32px !important;
+	color: #000000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif !important;
+}
+
+
+[data-notification-id="7"] .altumcode-wrapper {
+	transform: scale(0.7);
+}
+
+//Design 2 - Call To Action
+[data-notification-id="13"] .altumcode-wrapper {
+    transform: scale(.8);
+}
+
+[data-notification-id="13"] .altumcode-button-modal-wrapper .altumcode-close {
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50% !important;
+	background-color: white !important;
+	opacity: 1 !important;
+	right: 15px !important;
+	top: 15px !important;
+	font-size: 32px !important;
+	color: #000000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif !important;
+	position: relative;
+}
+
+[data-notification-id="13"] .altumcode-button-modal-wrapper .altumcode-close:after{
+	content: '';
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: white;
+   background-image: url('../../assets/img/close-img.png');
+   z-index: 1;
+   border-radius: 50px;
+}
+
+[data-notification-id="13"] .altumcode-button-modal-wrapper {
+	border-radius: 20px !important;
+	background-color: #090011 !important;
+	background-image: url("https://directorist.com/wp-content/uploads/2023/12/New-year-sale.png");
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+[data-notification-id="13"] .altumcode-button-modal-button {
+	margin-bottom: 0 !important;
+	display: flex !important;
+	width: 384px !important;
+	padding: 16px 70px !important;
+	justify-content: center !important;
+	align-items: center !important;
+	gap: 10px !important;
+	border-radius: 100px !important;
+	background: linear-gradient(115deg, #FFFA8A 5.37%, #85FAC9 82.34%) !important;
+	color: #000000 !important;
+	font-family: bergen neue !important;
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	line-height: 38px !important;
+	text-transform: uppercase !important;
+}
+
+
+[data-notification-id="13"] .altumcode-button-modal-title,
+[data-notification-id="13"] .altumcode-button-modal-header {
+	display: none;
+}
+
+[data-notification-id="13"] .altumcode-button-modal-image {
+	margin-bottom: 20px;
+}
+[data-notification-id="13"] .altumcode-button-modal-wrapper .altumcode-button-modal-content{
+	padding: 30px 20px !important;
+}
+
+
+@media (min-width: 576px) {
+	[data-notification-id="13"] .altumcode-button-modal-wrapper {
+		max-width: 800px !important;
+		width: 800px !important;
+		padding: 0 !important;
+	}
+
+	[data-notification-id="13"] .altumcode-button-modal-wrapper .altumcode-button-modal-content {
+		padding: 57px 0 !important;
+	}
+
+	[data-notification-id="13"] .altumcode-wrapper {
+		transform: scale(.7);
+	}
+}
+
+// Design 3
+[data-notification-id="15"] .altumcode-wrapper {
+    transform: scale(.8);
+}
+
+[data-notification-id="15"] .altumcode-button-modal-wrapper .altumcode-close {
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50% !important;
+	background-color: white !important;
+	opacity: 1 !important;
+	right: 15px !important;
+	top: 15px !important;
+	font-size: 32px !important;
+	color: #000000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif !important;
+}
+
+[data-notification-id="15"] .altumcode-button-modal-wrapper {
+	border-radius: 20px !important;
+	background-color: #090011 !important;
+	background-image: url("https://i.ibb.co/SPtbcMD/Popup.png");
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+[data-notification-id="15"] .altumcode-button-modal-button {
+	margin-bottom: 0 !important;
+	display: flex !important;
+	width: 384px !important;
+	padding: 16px 70px !important;
+	justify-content: center !important;
+	align-items: center !important;
+	gap: 10px !important;
+	border-radius: 100px !important;
+	background-color: white !important;
+	color: #000000 !important;
+	font-family: bergen neue !important;
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	line-height: 38px !important;
+	text-transform: uppercase !important;
+}
+
+
+[data-notification-id="15"] .altumcode-button-modal-title,
+[data-notification-id="15"] .altumcode-button-modal-header {
+	display: none;
+}
+
+[data-notification-id="15"] .altumcode-button-modal-image {
+	margin-bottom: 20px;
+}
+[data-notification-id="15"] .altumcode-button-modal-wrapper .altumcode-button-modal-content{
+	padding: 30px 20px !important;
+	justify-content: flex-end;
+	height: 100% !important;
+}
+
+
+@media (min-width: 576px) {
+	[data-notification-id="15"] .altumcode-button-modal-wrapper {
+		max-width: 800px !important;
+		width: 800px !important;
+		height:604px !important;
+		padding: 0 !important;
+	}
+
+	[data-notification-id="15"] .altumcode-button-modal-wrapper .altumcode-button-modal-content {
+		padding: 50px 0 !important;
+	}
+
+	[data-notification-id="15"] .altumcode-wrapper {
+		transform: scale(.7);
+	}
+}
+@media (max-width: 576px) {
+	[data-notification-id="15"] .altumcode-button-modal-wrapper {
+		max-width: 500px!important;
+		width: 500px!important;
+		height: 500px!important;
+		padding: 0!important;
+	}
+	[data-notification-id="15"] .altumcode-button-modal-button{
+		width:100% !important;
+		padding: 8px 56px!important;
+		font-size: 20px!important;
+	}
+}
+
+//Global Deal
+
+[data-position="middle_center"].altumcode.altumcode-middle_center.on-visible {
+	background: #00000080;
+	max-width: 100% !important;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	top: 0 !important;
+}

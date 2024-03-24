@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1820.001 427.999" style="height: 100%">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4e95"/>
+      <stop offset="1" stop-color="#fa8b0c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.851" y1="0.167" x2="0.165" y2="0.862" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30cdff"/>
+      <stop offset="1" stop-color="#4353ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_4123" data-name="Group 4123" transform="translate(-49.999 -72.001)">
+    <path id="Intersection_11" data-name="Intersection 11" d="M-2073.785,7940c-587.025-.154-966.376-150.917-1096.216-212.152V7522a10,10,0,0,1,10-10h1800a10,10,0,0,1,10,10v346.277c-266.945,51.629-508.426,71.68-722.3,71.723Z" transform="translate(3220 -7440)" fill="#f8f8ff"/>
+    <g id="Group_3676" data-name="Group 3676">
+      <path id="Path_3384" data-name="Path 3384" d="M900.239,404.666h0A32.666,32.666,0,0,1,867.573,372h32.666Z" transform="translate(-324.906 -55.76)" fill="#834eff" opacity="0.28"/>
+      <path id="Path_3388" data-name="Path 3388" d="M868,633.618a13,13,0,0,0,13,13h0a13,13,0,0,0,13-13h0a13,13,0,0,0-13-13H868Z" transform="translate(700.511 1032) rotate(-90)" fill="#ff346b" opacity="0.4"/>
+      <g id="Shape" transform="translate(317.452 204.547) rotate(180)" opacity="0.1">
+        <path id="Shape-2" data-name="Shape" d="M0,71.548H71.548V0Z" transform="translate(23.452 76.548) rotate(-90)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Path_3480" data-name="Path 3480" d="M172.063,318.232A43.432,43.432,0,1,1,128.632,274.8,43.488,43.488,0,0,1,172.063,318.232Z" transform="translate(1793.063 624.663) rotate(180)" opacity="0.1" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g id="Shape-3" data-name="Shape" transform="translate(1349 399.188) rotate(180)">
+      <path id="Shape-4" data-name="Shape" d="M119.9,120.5C119.9,187.05,66.218,241,0,241V0C66.218,0,119.9,53.95,119.9,120.5Z" transform="translate(241 -10) rotate(90)" fill="#fec008"/>
+    </g>
+  </g>
+</svg>

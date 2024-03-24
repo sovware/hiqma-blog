@@ -1,0 +1,202 @@
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+
+}
+
+body {
+    background: #fff; /* Fallback for when there is no custom background color defined. */
+    color: $textColor;
+}
+
+/* Button/Inputs */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-adjust-hue-button,
+input[type="number"]::-webkit-outer-adjust-hue-button {
+    height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+textarea {
+    width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #444;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 35px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    min-height: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    border: 1px solid $graydark;
+    &:focus {
+        color: $textColor;
+    }
+}
+
+.contact-form-box{
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+        border: 1px solid $graydark;
+        &:focus {
+            color: #5c637e;
+        }
+    }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: $primaryColor;
+    border: medium none;
+    color: #fff;
+    padding: 5px 20px;
+    &:hover,
+    &:active {
+        background-color: rgba($primaryColor,.8);
+    }
+}
+
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.wpcf7 form .wpcf7-response-output{
+    margin: 1em 0em 1em;
+}
+
+/* --- Posts and pages --- */
+.sticky {
+    display: block;
+}
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+.page-links {
+    clear: both;
+    padding: 20px 0;
+    font-weight: 700;
+    .post-page-numbers {
+        background-color: #646464;
+        color: #ffffff;
+        display: inline-block;
+        padding: 2px 12px;
+        border-radius: 3px;
+        margin-right: 2px;
+        &.current,
+        &:hover {
+            background-color: #222222;
+        }
+    }
+}
+
+/* --- Comments --- */
+.comment-content a {
+    word-wrap: break-word;
+}
+.bypostauthor {
+    display: block;
+}
+
+/* --- Widgets --- */
+.widget {
+    margin: 0 0 40px;
+    select {
+        max-width: 100%;
+    }
+}
+
+.elementor-editor-active .elementor.elementor-edit-mode .elementor-element > .elementor-element-overlay {
+    z-index: 999;
+}

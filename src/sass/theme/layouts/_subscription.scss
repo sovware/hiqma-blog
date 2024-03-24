@@ -1,0 +1,258 @@
+/*-------------------------------------
+#. Subscription
+---------------------------------------*/
+
+/*  Subscription Form */
+
+.subscription-box {
+ position: relative;
+ padding: 75px 80px 80px;
+ z-index: 1;
+ text-align: center;
+ box-shadow: 0 20px 50px rgba($lightNormal, 0.2);
+ margin-top: -100px;
+ border-radius: 10px;
+ @extend .bg-white;
+ @include mobileLg {
+  padding: 25px 30px;
+ }
+ .wpcf7-response-output {
+  margin-top: 40px !important;
+ }
+ @include e("bg") {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-radius: 10px;
+ }
+ @include e("subtitle") {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  margin: -4px 0 10px;
+  color: $darkNormal;
+ }
+ @include e("title") {
+  font-size: 2.25rem;
+  line-height: 1.28;
+  max-width: 450px;
+  margin: 0 auto 38px;
+ }
+ @include e("form") {
+  .form-row {
+   position: relative;
+  }
+  .form-group {
+   position: relative;
+   margin-bottom: 0;
+   &.subscription-input {
+    width: 100%;
+    @include mobileLg {
+     width: 100%;
+    }
+    input {
+     height: 58px;
+     &::placeholder {
+      color: $darkNormal;
+     }
+    }
+   }
+   &.subscription-submit {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobileXs {
+     position: relative;
+     top: 40px;
+     right: 0;
+     width: 100%;
+     margin-bottom: 25px;
+     text-align: center;
+    }
+    .btn {
+     height: 42px;
+     padding: 0 1rem;
+     line-height: 2;
+     &.btn-raised {
+      box-shadow: 0 0;
+     }
+    }
+    .ajax-loader,
+    .wpcf7-spinner {
+     position: absolute;
+     bottom: -30px;
+     left: 0;
+    }
+    .wpcf7-submit {
+     padding: 15px 16.5px !important;
+     line-height: 0;
+     @extend .color-white;
+    }
+   }
+   input {
+    border-radius: 6px;
+    height: 50px;
+    padding-left: 54px;
+    padding-right: 120px;
+    border: 0 none;
+    box-shadow: 0 5px 20px rgba($lightNormal, 0.2);
+   }
+   .input-icon-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    i,
+    span,
+    svg {
+     font-size: 18px;
+     @extend .color-light-normal;
+    }
+   }
+  }
+  .ff-el-group {
+   margin-bottom: 0 !important;
+  }
+  .ff-el-input--content {
+   position: relative;
+   width: 100%;
+   margin-bottom: 0;
+   position: relative;
+   &:before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: 21px;
+    font-size: 18px;
+    background: #aeb9cd;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 17px;
+    height: 14px;
+    display: block;
+    -webkit-mask-image: url(../../assets/svg/email.svg);
+    mask-image: url(../../assets/svg/email.svg);
+   }
+   input.ff-el-form-control {
+    height: 58px;
+    font-size: 15px;
+    border: 0 none;
+    padding-left: 50px !important;
+    box-shadow: 0 5px 20px rgba(174, 185, 205, 0.2);
+    min-height: 58px;
+    @include mobileXs {
+     padding-left: 40px !important;
+    }
+    &::placeholder {
+     color: $darkNormal;
+    }
+   }
+   .error {
+    position: absolute;
+   }
+  }
+  .top_merged.ff_submit_btn_wrapper {
+   position: absolute;
+   right: 8px !important;
+   top: 50% !important;
+   margin-bottom: 0 !important;
+   transform: translateY(-50%) !important;
+   @include mobileXs {
+    position: relative;
+    top: 40px;
+    right: 0;
+    width: auto;
+    margin-bottom: 25px;
+    text-align: center;
+   }
+   .ff-btn {
+    height: 42px;
+    padding: 0 1rem;
+    line-height: 0.75;
+    padding: 15px !important;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #834eff !important;
+    @include mobileXs {
+     padding: 0 6px;
+    }
+   }
+  }
+  input {
+   border-radius: 6px;
+   height: 50px;
+   padding-left: 54px;
+   border: 0 none;
+   box-shadow: 0 5px 20px rgba($lightNormal, 0.2);
+  }
+  .input-icon-left {
+   position: absolute;
+   left: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   i,
+   span,
+   svg {
+    font-size: 18px;
+    @extend .color-light-normal;
+   }
+  }
+ }
+}
+
+// Subscription BFCM Theme
+.subscription-box {
+ &.theme-bfcm {
+  background-color: #050c2d !important;
+  .subscription-box__img {
+   position: absolute;
+   right: 90px;
+   top: 88px;
+   @include medium {
+    right: 60px;
+    opacity: 0.3;
+    z-index: -1;
+   }
+   @include mobileLg {
+    right: 30px;
+    top: 40px;
+   }
+  }
+  .subscription-box__title {
+   max-width: 100%;
+   margin-bottom: 12px;
+   @extend .color-white;
+   .highlighted {
+    font-weight: 700;
+    color: #fcc204;
+   }
+  }
+  p {
+   font-size: 18px;
+   opacity: 0.6;
+   margin-bottom: 0;
+   @extend .color-white;
+   br {
+    @include mobileLg {
+     display: none;
+    }
+   }
+  }
+  .subscription-box__form {
+   max-width: 570px;
+   margin: 50px auto 0;
+   @include mobileLg {
+    margin: 25px auto 0;
+   }
+  }
+ }
+}

@@ -1,0 +1,77 @@
+/*------------------------------------
+#. Badge
+------------------------------------*/
+
+.badge {
+  padding: 0.4em 0.67em;
+  border-radius: 3px;
+  color: #fff;
+  &.badge-primary {
+    @extend .bg-primary;
+  }
+  &.badge-secondary {
+    @extend .bg-secondary;
+  }
+  &.badge-success {
+    @extend .bg-success;
+  }
+  &.badge-info {
+    @extend .bg-info;
+  }
+  &.badge-warning {
+    @extend .bg-warning;
+  }
+  &.badge-danger {
+    @extend .bg-danger;
+  }
+  &.badge-pink {
+    @extend .bg-pink;
+  }
+  &.badge-salmon {
+    background-color: #f08080;
+  }
+  &.badge-state-gray {
+    background-color: #8ab9ba;
+  }
+}
+
+.badge {
+  &.badge-circle {
+    padding: 0.585em 0.75em;
+    border-radius: 50%;
+  }
+  &.badge-pill {
+    border-radius: 22px;
+  }
+}
+
+.badge {
+  &.badge-sm {
+    border-radius: 3px;
+    padding: 0.42em 1.072em;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  &.badge-lg {
+    padding: 0.917em 1.854em;
+  }
+}
+// Badge
+.badge {
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 21px;
+  box-shadow: 0 0 50px rgba(#a195bf, 0.2);
+  @extend .bg-white;
+  &.badge-wide {
+    padding: 13px 20px;
+  }
+}
+
+// Badge Color
+.badge {
+  &.badge-pink {
+    background-color: rgba($pink, 0.12) !important;
+    @extend .color-pink;
+  }
+}

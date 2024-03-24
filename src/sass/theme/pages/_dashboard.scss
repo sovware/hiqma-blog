@@ -1,0 +1,1709 @@
+/*---------------------------------------------
+# Dashboard page 
+-----------------------------------------------*/
+.dashboard-intro-area {
+  .display-2 {
+    &.pt-140 {
+      @include tab {
+        padding-top: 140px !important;
+      }
+
+      @include mobileLg {
+        padding-top: 110px !important;
+      }
+    }
+
+    &.pt-60 {
+      @include mobileLg {
+        padding-bottom: 30px !important;
+      }
+    }
+  }
+}
+
+/*  Dashboard Menu */
+.dashboard-tab-menu,
+.affwp-affiliate-dashboard {
+  padding: 28px 20px 13px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba($lightColor, 0.1);
+  margin-bottom: 40px;
+  @extend .bg-white;
+
+  @include mobileLg {
+    padding: 15px 15px 13px;
+  }
+
+  @include e("nav") {
+    margin: 0;
+
+    @include mobileLg {
+      justify-content: center;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  @include e("item") {
+    a {
+      font-size: 15px;
+      padding: 12px 15px;
+      border-radius: 6px;
+      @extend .color-text;
+      display: flex;
+      align-items: center;
+
+      i,
+      span {
+        font-size: 18px;
+
+        &:before {
+          margin: 0;
+        }
+      }
+
+      i,
+      span,
+      svg,
+      img {
+        margin-right: 6px;
+        margin-top: -4px;
+        @extend .color-light-normal;
+      }
+
+      &.active {
+        font-weight: 500;
+        background-color: #eeefff;
+        @extend .color-primary;
+
+        i,
+        span,
+        svg {
+          @extend .color-primary;
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Content */
+.dashboard-contents {
+  .dashboard-box {
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba($lightColor, 0.15);
+    @extend .bg-white;
+
+    @include tab {
+      max-width: 730px;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Bergen Neue';
+    }
+
+    .dash-header {
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/*  Dashboard Avatar */
+.dashboard-contents {
+  @include e("avatar") {
+    padding: 50px 35px 130px;
+    position: relative;
+    z-index: 1;
+
+    @include tab {
+      margin-bottom: 30px !important;
+    }
+
+    .shape-bottom {
+      left: 0;
+      width: 100%;
+    }
+
+    .avatar-image {
+      margin-bottom: 18px;
+
+      img {
+        max-width: 120px;
+      }
+    }
+
+    .avatar-username {
+      margin-bottom: 6px;
+    }
+
+    .avatar-email {
+      margin-bottom: 50px;
+      @extend .color-dark-normal;
+    }
+
+    .avatar-logut-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      i,
+      svg,
+      span {
+        font-size: 16px;
+
+        &:before {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Info Box */
+.dashboard-contents {
+  @include e("info") {
+    padding: 40px;
+    min-height: 405px;
+
+    @include large {
+      padding: 30px;
+    }
+
+    @include tab {
+      min-height: 100%;
+    }
+  }
+
+  @include e("profile") {
+    padding: 50px;
+
+    @include mobileLg {
+      padding: 30px;
+    }
+  }
+
+  @include e("infoBox") {
+    padding: 27px 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba($lightColor, 0.15);
+    transition: $transition-base;
+    position: relative;
+
+    @include large {
+      padding: 15px;
+    }
+
+    @include mobileSm {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    &.infoBox-order {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      box-shadow: 0 20px 50px rgba($lightColor, 0.1);
+    }
+
+    .infoBox-icon {
+      margin-right: 15px;
+      align-self: flex-start;
+
+      @include mobileSm {
+        margin: 0 0 15px;
+      }
+
+      svg,
+      i,
+      span {
+        color: #fff;
+        fill: #fff;
+      }
+
+      svg {
+        g path {
+          fill: #fff;
+        }
+
+        .bin_bottom {
+          fill: #fff;
+          opacity: 1;
+        }
+      }
+    }
+
+    .dashboard-contents__link {
+      transition: 0.3s ease;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover {
+      .dashboard-contents__link {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .infoBox-content {
+    @include e("title") {
+      margin-bottom: 4px;
+    }
+
+    @include e("link") {
+      width: 25px;
+    }
+
+    @include e("planList") {
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .btn-link {
+    &:after {
+      display: none;
+    }
+
+    svg {
+      @include mobileSm {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*  Dashboard Profile Form */
+.dashboard-contents {
+  @include e("profileForm") {
+    margin-top: 42px;
+
+    legend {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      @extend .color-dark;
+    }
+
+    .form-row {
+      margin: 0 -15px;
+
+      .form-group {
+        margin-bottom: 30px;
+
+        select {
+          position: relative;
+          height: auto;
+          padding: 13px 20px;
+        }
+      }
+    }
+
+    .form-row>.col,
+    .form-row>[class*="col-"] {
+      padding: 0 15px;
+    }
+
+    .edd_profile_submit_wrap {
+      .btn {
+        width: auto;
+        border-radius: 6px;
+        padding: 0 30.42px;
+        border: 1px solid $primaryColor;
+        @extend .color-white;
+
+        @include mobileXs {
+          padding: 0 24px;
+        }
+
+        &:hover {
+          border: 1px solid $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Suport */
+.dashboard-contents {
+  @include e("support") {
+    padding: 50px;
+    margin: 0 20px;
+
+    @include mobileLg {
+      padding: 30px 20px;
+    }
+  }
+}
+
+/*  Dashboard Orders */
+.dashboard-contents {
+  @include e("orders") {
+    padding: 30px 35px;
+
+    .table-order {
+      thead {
+        tr {
+          th {
+            &.edd_purchase_id {
+              min-width: 114px;
+            }
+
+            &.edd_purchase_date {
+              min-width: 152px;
+            }
+
+            &.edd_purchase_status {
+              min-width: 145px;
+            }
+
+            &.edd_purchase_amount {
+              min-width: 185px;
+            }
+
+            &.edd_purchase_invoice {
+              min-width: 165px;
+            }
+
+            &.edd_purchase_details {
+              min-width: 140px;
+            }
+          }
+        }
+      }
+
+      tr {
+        td {
+          .dir-purchase-item-count {
+            font-size: 12px;
+            margin-left: 8px;
+            @extend .color-dark-normal;
+          }
+
+          &.edd_purchase_details {
+            .btn-xs {
+              padding: 0 17.8px;
+              border-radius: 6px;
+              height: 36px;
+              line-height: 2.4;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+
+              i,
+              svg,
+              img {
+                margin-right: 4px;
+
+                &:before {
+                  margin: 0;
+                }
+              }
+            }
+
+            .btn-secondary {
+              &:hover {
+                border-color: transparent;
+                background-color: #e0f7fa !important;
+                @extend .color-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Orders */
+.dashboard-contents {
+  @include e("downloads") {
+    padding: 30px 35px;
+
+    .table-downloads {
+      thead {
+        tr {
+          th {
+            &.edd_download_download_name {
+              min-width: 450px;
+            }
+
+            &.edd_download_download_files {
+              min-width: 220px;
+            }
+          }
+        }
+      }
+
+      tr {
+        td {
+          padding: 20px 20px;
+
+          .btn {
+            border-radius: 6px;
+
+            i,
+            svg,
+            img {
+              margin-right: 5px;
+            }
+
+            &.btn-xs {
+              height: 37px;
+              line-height: 2.6;
+              white-space: nowrap;
+              display: inline-flex;
+              align-items: center;
+            }
+          }
+
+          &.edd_download_download_files {
+            .edd_download_file+.edd_download_file {
+              margin-top: 10px;
+            }
+          }
+
+          &.edd_download_download_name {
+            a {
+              @extend .color-text;
+
+              &:hover {
+                @extend .color-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Subscription */
+.dashboard-contents {
+  @include e("subscription") {
+    padding: 30px 35px;
+  }
+}
+
+.table-subscription {
+  tbody {
+    tr {
+      td {
+        .edd_sl_item_name {
+          margin: -6px 0 3.5px;
+        }
+
+        .active {
+          @extend .color-success;
+        }
+
+        .expired {
+          @extend .color-warning;
+        }
+
+        .Cancelled {
+          @extend .color-danger;
+        }
+
+        .price-length {
+          margin-left: 5px;
+          @extend .color-dark-normal;
+        }
+
+        input {
+          height: 32px;
+          min-height: 32px;
+          padding: 10px 15px;
+          background-color: #EBEEF5;
+          border-radius: 5px;
+          font-size: 14px;
+          border: none;
+          outline: none;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Product Details */
+.dashboard-contents {
+  @include e("product-details") {
+    padding: 30px 35px 100px;
+
+    table {
+      margin: 0;
+    }
+
+    .purchase-status {
+      ul {
+        li {
+          font-size: 15px;
+          display: inline-block;
+          position: relative;
+          padding-left: 15px;
+
+          &:after {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            content: "";
+            @extend .bg-light;
+          }
+
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+
+          span {
+            font-weight: 500;
+            @extend .color-dark;
+          }
+        }
+      }
+    }
+
+    #edd_purchase_receipt_products {
+      border-collapse: inherit;
+
+      .edd_purchase_receipt_product_name {
+        font-weight: 400;
+      }
+
+      thead {
+        tr {
+          th {
+            &.p-name {
+              min-width: 280px;
+            }
+
+            &.p-status {
+              min-width: 100px;
+            }
+
+            &.p-license {
+              min-width: 200px;
+            }
+
+            &.p-action {
+              min-width: 250px;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            .key-box {
+              height: 43px;
+              border: 0 none;
+              display: inline-block;
+              border-radius: 4px;
+              padding: 8px 15px;
+              background-color: $grayNormal;
+            }
+          }
+        }
+      }
+    }
+
+    .edd-table {
+      thead {
+        tr {
+          th {
+            &:first-child {
+              border-left: 1px solid $grayLight;
+              border-right: 1px solid $grayLight;
+              border-bottom-left-radius: 0px;
+            }
+
+            &:last-child {
+              border-bottom-right-radius: 0px;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            font-weight: 400;
+            @extend .color-text;
+            border-bottom: 1px solid $graydeep !important;
+
+            &:first-child {
+              border-left: 1px solid $graydeep;
+              border-bottom-left-radius: 8px;
+            }
+
+            &:last-child {
+              border-right: 1px solid $graydeep;
+              border-bottom-right-radius: 8px;
+            }
+
+            .edd_purchase_receipt_files {
+              li {
+                display: inline-block;
+              }
+            }
+
+            .edd_download_file_link {
+              white-space: nowrap;
+              display: inline-flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    .table-infoList {
+      max-width: 600px;
+
+      table {
+        border-collapse: inherit;
+      }
+
+      tbody {
+        tr {
+          &:first-child {
+            td {
+              border-top: 1px solid $graydeep !important;
+
+              &:first-child {
+                border-top-left-radius: 8px !important;
+              }
+
+              &:last-child {
+                border-top-right-radius: 8px !important;
+              }
+            }
+          }
+
+          &:last-child {
+            td {
+              &:first-child {
+                border-bottom-left-radius: 8px !important;
+              }
+
+              &:last-child {
+                border-bottom-right-radius: 8px !important;
+              }
+            }
+          }
+
+          td {
+            padding: 15px 25px;
+            border: 0 none !important;
+            border-bottom: 1px solid $graydeep !important;
+            border-radius: 0px !important;
+
+            &:first-child {
+              border-left: 1px solid $graydeep !important;
+            }
+
+            &:last-child {
+              border-right: 1px solid $graydeep !important;
+            }
+
+            strong {
+              font-weight: 500;
+              @extend .color-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard License Handeler */
+.dashboard-contents {
+  .license-handle-wrap {
+    margin: 30px 0 100px;
+    padding: 50px;
+
+    @include tab {
+      padding: 30px;
+      margin: 30px auto 100px;
+    }
+
+    .edd-sl-manage-license-header {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .edd-sl-manage-license-details {
+      font-size: 18px;
+      margin-bottom: 10px;
+
+      .edd-sl-manage-license-key,
+      .edd-sl-manage-license-product {
+        font-weight: 500;
+        @extend .color-dark;
+
+        code,
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          @extend .color-text;
+        }
+      }
+
+      .edd-sl-manage-license-product {
+        margin-left: 15px;
+
+        @include mobileLg {
+          display: block;
+          margin: 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.table-site-url {
+  thead {
+    tr {
+      th {
+        &.edd_sl_url {
+          min-width: 250px;
+        }
+
+        &.edd_sl_actions {
+          min-width: 200px;
+        }
+      }
+    }
+  }
+}
+
+/*  Dashboard Add Url Form */
+.add-url-form {
+  margin-top: 15px;
+
+  .url-input-wrap {
+    @include mobileXs {
+      flex-flow: column;
+    }
+  }
+
+  .form-element {
+    &.element-url {
+      width: 45%;
+      margin-right: 15px;
+
+      @include mobileMd {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      line-height: 1;
+    }
+  }
+}
+
+/*  Dashboard Checkou table */
+.table-checkout-wrapper {
+  table {
+
+    thead,
+    tfoot {
+      tr {
+        th {
+          border: 0 none !important;
+        }
+      }
+    }
+
+    thead {
+      tr {
+        th {
+          font-weight: 500 !important;
+
+          &:first-child {
+            border-radius: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          font-size: 15px;
+          font-weight: 400;
+          padding: 24px 20px !important;
+          border: 0 none !important;
+          @extend .color-text;
+
+          .edd-sl-renewal-details {
+            width: fit-content;
+            margin-top: 15px;
+            height: 43px;
+            border-radius: 4px;
+            padding: 8px 15px;
+            background-color: $grayNormal;
+
+            span {
+              font-size: 14px;
+
+              &.edd-sl-renewal-label {
+                font-weight: 500;
+                @extend .color-dark;
+              }
+            }
+          }
+
+          .edd_cart_item_image {
+            img {
+              width: 50px;
+            }
+          }
+
+          .edd_checkout_cart_item_title {
+            display: inline-block;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        th {
+          font-size: 15px;
+          font-weight: 400;
+          padding: 24px 20px !important;
+          border-top: 1px solid $graydeep !important;
+
+          &.edd_cart_total {
+            font-size: 16px;
+            font-weight: 500 !important;
+            @extend .color-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// Checkout Form
+#edd_checkout_form_wrap {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 50px 50px 0;
+  box-shadow: 0 10px 50px rgba($lightColor, 0.15);
+
+  @include mobileSm {
+    padding: 30px 30px 0;
+  }
+
+  #edd_sl_renewal_fields,
+  #edd_discount_code {
+    padding: 20px 30px 30px !important;
+    border-radius: 6px;
+    border: 0 none;
+    background: #e6f7e9 !important;
+    margin-bottom: 30px;
+
+    #edd_sl_show_renewal_form_wrap {
+      margin-bottom: -10px;
+      font-size: 18px;
+      @extend .color-dark;
+    }
+
+    #edd_sl_show_renewal_form {
+      font-size: 14px;
+      @extend .color-primary;
+
+      @include mobileSm {
+        display: block !important;
+      }
+    }
+
+    #edd-license-key-container-wrap {
+      background: transparent;
+
+      .edd-description {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      input {
+        margin: 14px 0;
+        border-radius: 5px;
+        padding: 15px 20px;
+        border-color: $graydark;
+        height: 50px;
+        width: 100%;
+        @extend .color-text;
+
+        &::placeholder {
+          color: $lightNormal;
+        }
+
+        &:focus {
+          outline: transparent;
+        }
+      }
+    }
+
+    #edd-cancel-license-renewal {
+      display: inline-block;
+      margin-left: 10px;
+
+      @include mobileSm {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+
+  .edd-submit {
+    padding: 4px 24px;
+    font-size: 16px;
+    height: 48px;
+    border: 0 none;
+    @extend .color-white;
+    @extend .bg-primary;
+
+    @include mobileSm {
+      width: 100%;
+    }
+
+    &:hover {
+      border: 0 none;
+      background-color: #7338fc !important;
+    }
+  }
+}
+
+#edd_purchase_form {
+  .edd-payment-icons {
+    margin-bottom: 25px;
+  }
+
+  #edd_discount_code {
+    padding: 20px 30px 20px !important;
+
+    #edd_show_discount {
+      font-size: 18px;
+      padding: 0;
+      background-color: transparent;
+      border: 0 none;
+      margin-bottom: 0;
+      @extend .color-dark;
+
+      .edd_discount_link {
+        font-size: 14px;
+        @extend .color-primary;
+      }
+    }
+  }
+
+  #edd-discount-code-wrap {
+    background: transparent;
+    padding: 0;
+
+    .edd-label {
+      font-size: 18px;
+      margin-bottom: 8px;
+      @extend .color-dark;
+    }
+
+    .edd-description {
+      font-size: 16px;
+    }
+
+    .edd-discount-code-field-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+
+      @include mobileSm {
+        flex-flow: column;
+        align-items: flex-start;
+      }
+
+      .edd-input {
+        margin: 0 15px 0 0;
+        border-radius: 5px;
+        padding: 15px 20px;
+        border-color: #d9deec;
+        height: 50px;
+        @extend .color-text;
+
+        @include mobileSm {
+          width: 100%;
+        }
+      }
+
+      .edd-submit {
+        height: 50px;
+        margin: 0;
+        padding: 4px 24px;
+
+        @include mobileSm {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+#edd_checkout_user_info,
+#edd_register_account_fields,
+#edd_cc_fields,
+#edd_cc_address,
+#edd_payment_mode_select,
+#edd_cc_card_info {
+  position: relative;
+  padding: 70px 30px 30px !important;
+  border-radius: 8px;
+  border-color: $graydeep !important;
+
+  legend {
+    position: absolute;
+    left: 30px;
+    top: 28px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    @extend .color-dark;
+  }
+
+  p {
+    margin-bottom: 25px;
+
+    input {
+      margin-top: 15px;
+      border-radius: 5px;
+      padding: 15px 20px !important;
+      border-color: $graydark;
+      height: 50px;
+      @extend .color-text;
+
+      @include tab {
+        width: 100% !important;
+      }
+
+      &::placeholder {
+        color: $lightNormal;
+      }
+
+      &:focus {
+        outline: transparent;
+      }
+    }
+
+    select {
+      width: 70% !important;
+      margin-top: 15px;
+      border-radius: 5px;
+      padding: 15px 20px !important;
+      border-color: $graydark;
+      height: 50px;
+
+      @include tab {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .edd-label {
+    font-size: 16px;
+    @extend .color-dark;
+  }
+
+  .edd-description {
+    margin-bottom: 0 !important;
+    font-size: 14px !important;
+    @extend .color-text;
+  }
+
+  .StripeElement {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 15px 20px !important;
+    border-color: $graydark;
+  }
+}
+
+.CardNumberField {
+  .InputContainer {
+    input {
+      @extend .color-text;
+    }
+
+    input::placeholder {
+      font-weight: 300;
+      color: $textColor !important;
+    }
+  }
+}
+
+#edd_checkout_form_wrap #edd_sl_renewal_fields button#edd_sl_show_renewal_form {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff !important;
+  margin-top: 0px;
+}
+
+#edd_checkout_form_wrap #edd_sl_renewal_fields #edd_sl_show_renewal_form:focus {
+  outline: none;
+  box-shadow: 0 0;
+}
+
+form#edd_sl_renewal_form .edd-description .edd-form-group__label {
+  margin-top: 35px;
+}
+
+// Credit Info
+#edd_cc_fields {
+  background: transparent !important;
+  padding-top: 62px !important;
+
+  #edd_secure_site_wrapper {
+    padding: 0;
+    margin: 0 0 8px -2px;
+    font-weight: 500;
+    @extend .color-success;
+  }
+
+  #edd-stripe-card-element {
+    width: 70% !important;
+    height: auto;
+    box-shadow: none;
+
+    @include tab {
+      width: 100% !important;
+    }
+  }
+
+  .edd-stripe-card-selector {}
+
+  .CardField {
+    .CardField-number {
+      font-size: 14px;
+
+      @include mobileXs {
+        font-size: 11px;
+      }
+    }
+
+    .CardField-input-wrapper {
+      span {
+        font-size: 15px;
+        font-weight: 400;
+        @extend .color-text;
+      }
+    }
+  }
+}
+
+#edd_purchase_submit {
+  #edd_final_total_wrap {
+    margin: 10px 0 30px;
+    border-radius: 6px;
+    border: 0 none;
+    background: #eeefff !important;
+    @extend .color-primary;
+  }
+}
+
+// EDD Strip Cards
+#edd-stripe-manage-cards {
+  margin-top: 50px;
+
+  fieldset {
+    >legend {
+      font-size: 22px;
+      margin-bottom: 45px;
+      @extend .color-dark;
+
+      @include mobileLg {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .edd-stripe-card-item {
+    padding: 20px !important;
+    border-radius: 10px !important;
+    border: 1px solid $graydark !important;
+
+    .card-details {
+      span {
+        @extend .color-dark;
+      }
+    }
+
+    .card-meta {
+      margin: 6px 0;
+
+      span {
+        @extend .color-text;
+      }
+    }
+
+    .edd-stripe-update-card {
+      margin-right: 8px;
+      @extend .color-primary;
+    }
+
+    .edd-stripe-delete-card {
+      margin-left: 8px;
+      @extend .color-danger;
+    }
+
+    .card-update-form {
+      margin-top: 10px;
+
+      >label {
+        font-size: 18px;
+        font-weight: 500;
+        @extend .color-dark;
+      }
+
+      .card-expiration-fields {
+        .edd-label {
+          width: 100%;
+          font-size: 16px;
+          font-weight: 400;
+          @extend .color-text;
+        }
+
+        select {
+          border-radius: 5px;
+          padding: 15px 20px;
+          border-color: #d9deec;
+          height: 50px;
+        }
+      }
+
+      .edds-card-address-field {
+        label {
+          font-size: 16px;
+          font-weight: 400;
+          @extend .color-text;
+        }
+
+        label,
+        input,
+        select {
+          width: 100%;
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        input,
+        select {
+          line-height: 1.5;
+          min-height: 35px;
+          border-radius: 5px;
+          padding: 15px 20px;
+          border-color: #d9deec;
+          height: 50px;
+          width: 100%;
+        }
+      }
+
+      .edd-stripe-cancel-update {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .edd-button,
+  .edd-stripe-submit-update {
+    width: auto;
+    height: 55px;
+    border-radius: 6px;
+    padding: 0 30.42px;
+    border: 1px solid #4353ff;
+
+    @include mobileXs {
+      padding: 0 24px;
+    }
+
+    &:hover {
+      background-color: #7338fc !important;
+      box-shadow: 0 10px 20px rgba(67, 83, 255, 0.2);
+    }
+  }
+}
+
+#edd-stripe-add-new-card {
+  .edd-stripe-add-card-actions {
+    margin-top: 30px;
+
+    .edd-stripe-add-new-cancel {
+      margin-left: 15px;
+    }
+  }
+}
+
+.edd-stripe-add-new-card {
+  margin-top: 50px !important;
+
+  >label {
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    margin-bottom: 46px !important;
+    color: $darkColor !important;
+
+    @include mobileLg {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+
+  #edd_cc_card_info,
+  #edd_cc_address {
+    padding: 80px 30px 30px !important;
+  }
+
+  #edd-stripe-card-element {
+    width: 70%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+}
+
+.edd-card-selector-radio {
+  .edd-stripe-card-radio-item {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &.selected {
+      background-color: transparent !important;
+      border: 0 none !important;
+    }
+  }
+}
+
+// Edd Status Bar
+.edd-status-bar {
+  margin: 10px 0 10px;
+  padding: 0.5em 1.387em;
+  border-radius: 6px;
+
+  &.edd-status-bar-danger {
+    background-color: rgba($dangerColor, 0.15);
+
+    p {
+      color: $dangerColor;
+    }
+  }
+}
+
+.edd-privacy-policy-agreement {
+  margin-bottom: 30px;
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+}
+
+#edd_checkout_form_wrap #edd_sl_renewal_fields {
+  padding: 20px 30px 20px !important;
+}
+
+/* support pins */
+.support-pin {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #151826;
+    margin-bottom: 0 !important;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8c8c8c;
+  }
+}
+
+/* Checkout Alert */
+.up-sell-alert {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(47, 47, 47, 0.10);
+  padding-inline: 40px;
+  padding-block: 0;
+  margin-bottom: 30px;
+
+  @include mobileLg {
+    padding-inline: 20px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEEF5;
+    padding-block: 19.5px;
+
+    @include mobileLg {
+      padding-block: 15px;
+    }
+
+    h4 {
+      font-size: 24px;
+      color: #7B839B;
+      font-weight: 500;
+      line-height: calc(30px/24px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__close {
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #EBEEF5;
+    color: rgba(#151826, 0.60);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #FF346B;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  }
+
+  &__content {
+    padding-block: 26px 25px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(23px/18px);
+    color: #151826;
+    margin-bottom: 19px;
+
+    .highlight-primary {
+      color: #4353FF;
+    }
+
+    .highlight-legal-pages {
+      color: #5243f8;
+    }
+
+    .highlight-discount {
+      color: #FF346B;
+    }
+  }
+}
+
+//items
+.up-sell-items {
+  .up-sell-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.up-sell-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  figure {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__left {
+    flex: 3;
+
+    @include mobileLg {
+      flex: 100%;
+    }
+  }
+
+  &__icon {
+    min-width: 52px;
+    height: 52px;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.helpgent-bg{
+      background-color: #000000;
+      border: 1px solid #000000;
+    }
+    &.legal-pages-pro-bg{
+      background-color: rgba(82, 67, 248,.10);
+      border: 1px solid rgba(82, 67, 248,.10);
+    }
+    
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    h4 {
+      font-size: 18px;
+      line-height: calc(30px/18px);
+      font-weight: 500;
+      color: #151826;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: calc(24px/15px);
+      color: #4B5064;
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+    font-weight: 600;
+    color: #FF346B;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    flex: 1;
+    justify-content: flex-end;
+    white-space: nowrap;
+
+    @include mobileLg {
+      justify-content: flex-start;
+    }
+
+    sup {
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 500;
+      color: #929BB1;
+    }
+
+    small {
+      font-size: 13px;
+      line-height: 1.6923076923;
+      font-weight: 400;
+      color: #7B839B;
+      margin-left: 2px;
+    }
+  }
+
+  &__switch {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+//Switch
+.up-sell-switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 30px;
+
+  input {
+    display: none;
+
+    &:checked+.slider {
+      background: #000000;
+
+      &:before {
+        transform: translateX(25px);
+      }
+    }
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #C4C8FB;
+    border-radius: 40px;
+    transition: 0.4s;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      background: #fff;
+      border-radius: 50%;
+      left: 5px;
+      bottom: 5px;
+      transition: 0.4s;
+      box-shadow: 0 0 4px rgba(146, 155, 177, 0.15);
+    }
+  }
+}

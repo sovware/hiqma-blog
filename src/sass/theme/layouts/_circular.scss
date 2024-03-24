@@ -1,0 +1,82 @@
+/*---------------------------------------------
+#. Circular Css
+-----------------------------------------------*/
+.circular-block {
+  margin: 0 -50px;
+  &:first-child {
+    margin-top: 15px;
+  }
+  @include mobileLg {
+    margin: 0;
+  }
+  .circular-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #7b839b !important;
+    text-align: center;
+    margin-bottom: -25px;
+    @include mobileLg {
+      margin: 0;
+    }
+  }
+}
+
+.circular-table {
+  padding: 50px;
+  @include tab {
+    padding: 15px;
+  }
+  table {
+    margin-top: 0;
+    tr {
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba($lightColor, 0.1);
+      transition: 0.35s;
+      &:hover {
+        box-shadow: 0 20px 50px rgba($lightColor, 0.2);
+      }
+      td {
+        border: 0 none;
+        padding: 24px 30px;
+        &.job-title {
+          min-width: 380px;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            margin-bottom: 0;
+            max-width: 250px;
+            line-height: 1.3333;
+          }
+        }
+        &.job-type {
+          span {
+            font-size: 14px;
+            color: #7b839b;
+          }
+        }
+        &.action {
+          .btn-link {
+            font-size: 14px;
+            font-weight: 500;
+            &:hover {
+              letter-spacing: 0px;
+              @extend .color-pink;
+              svg path,
+              i {
+                fill: $pink;
+                color: $pink;
+              }
+            }
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

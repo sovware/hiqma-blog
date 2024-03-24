@@ -1,0 +1,219 @@
+/*-------------------------------------
+#. BranchNode Css
+---------------------------------------*/
+.sovware-branchNode-area {
+  &.pt-110 {
+    @include mobileLg {
+      padding-top: 30px;
+    }
+  }
+}
+// Sovware BranchNode Content
+.sovware-branchNode {
+  padding: 0px 60px 0px;
+  border-radius: 6px;
+  @include large {
+    padding: 30px 40px 0px;
+  }
+  @include mobileLg {
+    padding: 30px 25px 0px;
+  }
+  &.branchNode-pink-lighter{
+    background-color: #FEF4FA;
+  }
+  &.featured-node {
+    .sovware-branchNode__content {
+      p {
+        max-width: 400px;
+      }
+    }
+  }
+  .badge {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10.5px 20px;
+    letter-spacing: 1px;
+  }
+  @include e(name) {
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #4353ff !important;
+  }
+  @include e(content) {
+    .badge-wrap {
+      margin-bottom: 14px;
+    }
+    .sub-title {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.32;
+      @extend .color-dark;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 12px;
+      margin-bottom: 25px;
+      .highlighted {
+        font-weight: 500;
+      }
+      br {
+        @include mobileLg {
+          display: none;
+        }
+      }
+    }
+    .btn-link {
+      svg path,
+      i {
+        fill: $primaryColor;
+        @extend .color-primary;
+      }
+    }
+  }
+  @include e(img) {
+    margin-right: -20px;
+    margin-left: -55px;
+    @include mobileLg {
+      margin: 0;
+    }
+    img {
+      @include tab {
+        margin: -40px 0;
+      }
+      @include mobileLg {
+        margin: -10px 0;
+      }
+    }
+  }
+}
+
+// BranchNode Theme 2
+.sovware-branchNode {
+  &.theme-2 {
+    padding: 25px 70px 25px;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(#c8bad2, 0.2);
+
+    @include medium {
+      padding: 25px 45px 25px;
+    }
+    @include mobileMd {
+      padding: 25px;
+    }
+    .sovware-branchNode__content {
+      .badge-wrap {
+        margin: -8px -8px 38px -8px;
+      }
+      .badge {
+        margin: 8px;
+        &.badge-rounded {
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: capitalize;
+          @extend .color-dark;
+        }
+        .rounded-tag {
+          padding: 1px 6px;
+          margin-right: 3px;
+          border-radius: 21px;
+          box-shadow: 0 0 5px rgba(#a195bf, 0.3);
+          @extend .color-white;
+          @extend .bg-success;
+        }
+      }
+    }
+    .sovware-branchNode__logo {
+      align-items: center;
+      img {
+        max-width: 70px;
+      }
+      .branchNode-logo-shadow {
+        border-radius: 50%;
+        box-shadow: 0 30px 60px rgba(#646cc5, 0.25);
+      }
+    }
+    .sovware-branchNode__name {
+      margin-left: 15px;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .sovware-branchNode__title {
+      margin-top: 20px;
+      line-height: 1.32;
+      br {
+        @include mobileSm {
+          display: none;
+        }
+      }
+    }
+    &.theme-gradient{
+      padding: 50px 70px 40px;
+      background: #6e1aff;
+      background: -moz-linear-gradient(45deg,  #6e1aff 1%, #197cff 100%);
+      background: -webkit-linear-gradient(45deg,  #6e1aff 1%,#197cff 100%);
+      background: linear-gradient(45deg,  #6e1aff 1%,#197cff 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e1aff', endColorstr='#197cff',GradientType=1 );
+      @include mobileLg{
+        padding: 35px 32px 15px;
+      }
+      .sovware-branchNode__img img{
+        @include mobileLg{
+          margin: 0;
+        }
+      }
+      .sovware-branchNode__logo{
+        .sovware-branchNode__name{
+          font-size: 36px;
+          font-weight: 600;
+          color: #fff !important;
+        }
+      }
+      .sovware-branchNode__content{
+        .badge-wrap{
+          margin: -8px -8px 25px -8px;
+        }
+        .badge{
+          padding: 7.5px 9px;
+          &.badge-success{
+            padding: 7.5px 12px;
+            letter-spacing: 1.2px;
+            font-size: 11px;
+          }
+          &.badge-rounded{
+            letter-spacing: 0px;
+            padding: 7.5px 12px 7.5px 5px;
+            .rounded-tag{
+              padding: 3.5px 8.5px;
+              background-color: #FF346B !important;
+            }
+          }
+        }
+      }
+      .sovware-branchNode__title{
+        font-size: 27px;
+        margin-bottom: 10px;
+        color: #fff !important;
+      }
+      p{
+        color: rgba(255,255,255,.80);
+        margin-bottom: 15px;
+      }
+      .btn-link{
+        color: #fff !important;
+        svg path{
+          color: #fff !important;
+          fill: #fff !important;
+        }
+        &:after{
+          background-color: #fff !important;
+        }
+      }
+      .sovware-branchNode__img{
+        margin-right: -30px;
+        margin-left: -60px;
+      }
+    }
+  }
+}

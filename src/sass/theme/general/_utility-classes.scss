@@ -1,0 +1,753 @@
+.lg-text-center {
+    @include medium {
+      text-align: center !important;
+    }
+}
+
+/* spacing */
+
+/* padding-top */
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-10 {
+    padding-bottom: 10px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+    @include tab {
+        padding-top: 50px;
+    }
+    @include mobileLg {
+        padding-top: 40px;
+    }
+}
+
+.pt-70 {
+    padding-top: 70px;
+    @include tab {
+        padding-top: 50px;
+    }
+    @include mobileLg {
+        padding-top: 40px;
+    }
+}
+
+.pt-90 {
+    padding-top: 90px;
+    @include tab {
+        padding-top: 50px;
+    }
+    @include mobileLg {
+        padding-top: 40px;
+    }
+}
+
+.pt-95 {
+    padding-top: 95px;
+    @include tab {
+        padding-top: 50px;
+    }
+    @include mobileLg {
+        padding-top: 40px;
+    }
+}
+
+.pt-100 {
+    padding-top: 100px;
+    @include tab {
+        padding-top: 60px;
+    }
+    @include mobileLg {
+        padding-top: 40px;
+    }
+}
+
+.pt-110 {
+    padding-top: 110px;
+    @include tab {
+        padding-top: 70px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-120 {
+    padding-top: 120px;
+    @include tab {
+        padding-top: 80px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-125 {
+    padding-top: 125px;
+    @include tab {
+        padding-top: 80px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-130 {
+    padding-top: 130px;
+    @include tab {
+        padding-top: 80px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-135 {
+    padding-top: 135px;
+    @include tab {
+        padding-top: 80px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-140 {
+    padding-top: 140px;
+    @include tab {
+        padding-top: 100px;
+    }
+    @include mobileLg {
+        padding-top: 80px;
+    }
+}
+
+.pt-150 {
+    padding-top: 150px;
+    @include tab {
+        padding-top: 80px;
+    }
+    @include mobileLg {
+        padding-top: 60px;
+    }
+}
+
+.pt-160 {
+    padding-top: 160px;
+    @include tab {
+        padding-top: 110px;
+    }
+    @include mobileLg {
+        padding-top: 90px;
+    }
+}
+
+.pt-170 {
+    padding-top: 170px;
+    @include tab {
+        padding-top: 110px;
+    }
+    @include mobileLg {
+        padding-top: 90px;
+    }
+}
+
+.pt-180 {
+    padding-top: 180px;
+    @include tab {
+        padding-top: 120px;
+    }
+    @include mobileLg {
+        padding-top: 100px;
+    }
+}
+
+.pt-190 {
+    padding-top: 190px;
+    @include tab {
+        padding-top: 140px;
+    }
+    @include mobileLg {
+        padding-top: 120px;
+    }
+}
+
+.pt-200 {
+    padding-top: 200px;
+    @include tab {
+        padding-top: 140px;
+    }
+    @include mobileLg {
+        padding-top: 120px;
+    }
+}
+
+.pt-210 {
+    padding-top: 210px;
+    @include tab {
+        padding-top: 160px;
+    }
+    @include mobileLg {
+        padding-top: 130px;
+    }
+}
+
+.pt-230 {
+    padding-top: 230px;
+    @include tab {
+        padding-top: 160px;
+    }
+    @include mobileLg {
+        padding-top: 130px;
+    }
+}
+
+.pt-md-60{
+    @include tab{
+        padding-top: 60px;
+    }
+}
+
+
+/* padding-bottom */
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-70 {
+    padding-bottom: 70px !important;
+    @include tab {
+        padding-bottom: 50px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+    @include tab {
+        padding-bottom: 50px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+    @include tab {
+        padding-bottom: 50px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-95 {
+    padding-bottom: 95px;
+    @include tab {
+        padding-bottom: 50px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+    @include tab {
+        padding-bottom: 60px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-105 {
+    padding-bottom: 105px;
+    @include tab {
+        padding-bottom: 60px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-110 {
+    padding-bottom: 110px;
+    @include tab {
+        padding-bottom: 60px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-115 {
+    padding-bottom: 115px;
+    @include tab {
+        padding-bottom: 60px;
+    }
+    @include mobileLg {
+        padding-bottom: 40px;
+    }
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+    @include tab {
+        padding-bottom: 80px;
+    }
+    @include mobileLg {
+        padding-bottom: 60px;
+    }
+}
+
+.pb-130 {
+    padding-bottom: 130px;
+    @include tab {
+        padding-bottom: 90px;
+    }
+    @include mobileLg {
+        padding-bottom: 60px;
+    }
+}
+
+.pb-135 {
+    padding-bottom: 135px;
+    @include tab {
+        padding-bottom: 90px;
+    }
+    @include mobileLg {
+        padding-bottom: 60px;
+    }
+}
+
+.pb-140 {
+    padding-bottom: 140px;
+    @include tab {
+        padding-bottom: 95px;
+    }
+    @include mobileLg {
+        padding-bottom: 75px;
+    }
+}
+
+.pb-145 {
+    padding-bottom: 145px;
+    @include tab {
+        padding-bottom: 95px;
+    }
+    @include mobileLg {
+        padding-bottom: 75px;
+    }
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+    @include tab {
+        padding-bottom: 100px;
+    }
+    @include mobileLg {
+        padding-bottom: 80px;
+    }
+}
+
+.pb-160 {
+    padding-bottom: 160px;
+    @include tab {
+        padding-bottom: 120px;
+    }
+    @include mobileLg {
+        padding-bottom: 90px;
+    }
+}
+
+.pb-190 {
+    padding-bottom: 190px;
+    @include tab {
+        padding-bottom: 140px;
+    }
+    @include mobileLg {
+        padding-bottom: 120px;
+    }
+}
+
+.pb-180 {
+    padding-bottom: 180px;
+    @include tab {
+        padding-bottom: 140px;
+    }
+    @include mobileLg {
+        padding-bottom: 120px;
+    }
+}
+
+.pb-210 {
+    padding-bottom: 210px;
+    @include tab {
+        padding-bottom: 160px;
+    }
+    @include mobileLg {
+        padding-bottom: 130px;
+    }
+}
+
+.pb-220 {
+    padding-bottom: 220px;
+    @include tab {
+        padding-bottom: 160px;
+    }
+    @include mobileLg {
+        padding-bottom: 130px;
+    }
+}
+
+.pb-65 {
+    padding-bottom: 65px;
+}
+
+.pb-md-0{
+    @include tab{
+        padding-bottom: 0 !important;
+    }
+}
+
+.pb-md-30{
+    @include tab{
+        padding-bottom: 30px !important;
+    }
+}
+
+
+/* padding-left */
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.pl-60 {
+    padding-left: 60px;
+}
+
+.pl-100 {
+    padding-left: 100px !important;
+}
+
+@include tab {
+    .pl-m-0 {
+        padding-left: 0 !important;
+    }
+}
+
+
+/* padding-right */
+
+.pr-100 {
+    padding-right: 100px !important;
+}
+
+@include tab {
+    .pr-m-0 {
+        padding-right: 0 !important;
+    }
+}
+
+
+/* margin-top */
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+@include tab {
+    .mt-m-50 {
+        margin-top: 50px;
+    }
+    .mt-m-70 {
+        margin-top: 70px;
+    }
+    .mb-m-110 {
+        margin-bottom: 110px;
+    }
+    .mt-m-n-45 {
+        margin-top: -45px;
+    }
+    .mt-m-n-60 {
+        margin-top: -60px;
+    }
+    .mt-m-n-70 {
+        margin-top: -70px;
+    }
+}
+
+
+/* margin-bottom */
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-95 {
+    margin-bottom: 95px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-md-20 {
+    @include tab {
+        margin-bottom: 40px !important;
+    }
+}
+
+.mb-md-30 {
+    @include tab {
+        margin-bottom: 30px !important;
+    }
+}
+
+
+/* Negative margin */
+
+.mb-n-115 {
+    margin-bottom: -115px;
+}
+.mb-n-20 {
+    margin-bottom: -20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.ms-25 {
+    margin: -25px;
+}
+
+.ms-30 {
+    margin: -30px;
+}
+
+.ms-35 {
+    margin: -35px;
+}
+
+.ms-40 {
+    margin: -40px;
+}
+
+.ms-55 {
+    margin: -55px;
+}
+
+.mb-n-20 {
+    margin-bottom: -20px;
+}
+
+.mb-n-40 {
+    margin-bottom: -40px;
+}
+
+.ml-n-35{
+    margin-left: -35px;
+}
+
+.mt-n-35 {
+    margin-top: -35px;
+}
+
+.ml-55 {
+    margin-left: 55px;
+}
+
+.mt-m-40 {
+    margin-top: -40px;
+}
+
+.mt-m-70 {
+    margin-top: -70px;
+}
+
+.mb-n-md-60{
+    @include tab{
+        margin-bottom: -60px;
+    }
+}
+
+.mt-md-0{
+    @include tab{
+        margin-top: 0;
+    }
+}
+
+.mt-md-30{
+    @include tab{
+        margin-top: 30px;
+    }
+}
+
+.mt-sm-30{
+    @include mobileLg{
+        margin-top: 30px;
+    }
+}
+
+.mt-120{
+    margin-top: 120px;
+    @include tab{
+        margin-top: 60px
+    }
+    @include mobileLg{
+        margin-top: 40px
+    }
+}
+
+
+/* Display Headings */
+
+.display-1 {
+    @include displayHeading(54px, 1.19);
+}
+
+.display-2 {
+    @include displayHeading(48px, 1.21);
+}
+
+.display-3 {
+    @include displayHeading(42px, 1.24);
+}
+
+.display-4 {
+    @include displayHeading(36px, 1.26);
+}
+
+
+/* max-width none */
+
+.mw-none {
+    max-width: none !important;
+}
+
+.height-10 {
+    height: 10px;
+}
+
+.box-shadow-0 {
+    box-shadow: 0 0 !important;
+}
+
+.min-height-320 {
+    min-height: 320px !important;
+}
+
+.min-height-340 {
+    min-height: 340px !important;
+}

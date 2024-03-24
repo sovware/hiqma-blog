@@ -1,0 +1,23 @@
+//display heading mixin
+@mixin displayHeading($fSize, $lHeight) {
+  @include rfs($fSize);
+  font-weight: 600;
+  line-height: $lHeight;
+}
+
+//BEM Elements & Modifiers
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+//box shadow
+@mixin shadow($hOffset, $vOffset, $blur, $color, $opacity) {
+  box-shadow: $hOffset $vOffset $blur rgba($color, $opacity);
+}

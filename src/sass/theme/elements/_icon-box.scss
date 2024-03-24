@@ -1,0 +1,52 @@
+/*-------------------------------------
+#. Icon Box
+---------------------------------------*/
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.gradientPrimary {
+    box-shadow: 0 15px 20px rgba($primaryColor, 0.2);
+  }
+  &.gradientWarningReverse {
+    box-shadow: 0 15px 20px rgba(#ff346b, 0.2);
+  }
+  &.gradientSuccessReverse {
+    box-shadow: 0 15px 20px rgba($successColor, 0.2);
+  }
+  &.box-lg {
+    width: 94px;
+    height: 94px;
+    border-radius: 30px;
+  }
+  &.box-md {
+    width: 74px;
+    height: 74px;
+    border-radius: 20px;
+  }
+  &.box-sm {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+  }
+  svg,
+  img {
+    min-width: 34px;
+    min-height: 34px;
+  }
+  svg > g {
+    opacity: 1;
+  }
+}
+
+.icon-box {
+  &.box-circle {
+    border-radius: 50%;
+  }
+}
+
+.icon-box {
+  &.box-raised {
+    box-shadow: 0 15px 40px rgba(#aeb9cd, 0.2);
+  }
+}

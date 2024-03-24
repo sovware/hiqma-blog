@@ -1,0 +1,454 @@
+.affiliate-intro {
+  padding: 60px 0 100px;
+  @include tab {
+    padding: 48px 0 80px 0;
+  }
+  @include e(content) {
+    h2 {
+      @include rfs(48px);
+      line-height: 1.17;
+      font-weight: 500;
+      margin-bottom: 25px;
+      br {
+        @include medium {
+          display: none;
+        }
+      }
+      .commission-text {
+        display: block;
+        color: $pink;
+        @include medium {
+          display: unset;
+        }
+      }
+    }
+    p {
+      @include rfs(20px);
+      line-height: 1.65;
+      color: $darkDeep;
+      margin-bottom: 30px;
+    }
+  }
+  @include e(image) {
+    text-align: right;
+    @include tab {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: none;
+      @include large {
+        max-width: 100%;
+      }
+    }
+    video{
+      width: 100%;
+    }
+  }
+}
+.box-bg {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1330px;
+    border-radius: 30px;
+    @include large {
+      max-width: calc(100% - 30px);
+    }
+    @include tab {
+      max-width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &.box-warning {
+    &:before {
+      background: -webkit-linear-gradient(90deg, rgba(#FF4E95, 0.15), rgba(#FA8B0C, 0.15));
+    }
+  }
+  &.box-pink {
+    &:before {
+      background: -webkit-linear-gradient(90deg, rgba(#7B43FF, 0.15), rgba(#FC5C9C, 0.15));
+    }
+  }
+  &.box-gray {
+    &:before {
+      background: #f8f9fa;
+    }
+  }
+}
+
+.affiliate-commission {
+  padding: 100px 0;
+  @include tab {
+    padding: 72px 0 80px;
+  }
+  @include e(card) {
+    position: relative;
+    z-index: 1;
+    @include m(contents) {
+      text-align: center;
+    }
+    .commission-subtitle {
+      @extend .color-primary;
+      @include rfs(20px);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 15px;
+    }
+    h3 {
+      @include rfs(42px);
+      line-height: 1.24;
+      font-weight: 500;
+      span {
+        @extend .color-pink;
+        font-weight: 600;
+      }
+    }
+    p {
+      @include rfs(20px);
+      line-height: 1.65;
+      color: $darkDeep;
+    }
+  }
+
+  @include e(category) {
+    padding: 34px 27px 37px;
+    background: $white;
+    border-radius: 15px;
+    text-align: center;
+    @include medium {
+      padding: 30px 20px;
+    }
+    @include m(title) {
+      @include rfs(24px);
+      line-height: 1.24;
+      font-weight: 500;
+      color: $darkColor;
+      margin: 0 0 25px;
+    }
+    @include m(img) {
+      display: block;
+      margin: 0 auto 30px;
+    }
+    @include m(rate) {
+      @include rfs(42px);
+      line-height: 1.24;
+      font-weight: 500;
+      color: $darkColor;
+    }
+    @include m(desc) {
+      margin: 20px 0 0;
+      span {        
+        color: $primaryColor;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.affiliate-feature {  
+  padding: 100px 0 50px;
+  @include tab {
+    padding-top: 72px;
+  }
+  @include e(content) {
+    position: relative;
+    z-index: 1;
+    .section-header{
+      max-width: 870px;
+    }
+  }
+  @include e(list) {
+    margin: 0 -25px;
+  }
+  @include e(single) {
+    padding: 38px 40px 34px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 10px 50px;
+    min-height: 200px;
+    @include tab {
+      margin: 0 0 30px;
+    }
+  }
+  @include e(title) {
+    @include rfs(24px);
+    margin-bottom: 15px;
+  }  
+  @include e(desc) {
+    margin: 0;
+  }
+}
+
+.affiliate-started {
+  padding: 110px 0;
+  @include tab {
+    padding: 72px 0 80px;
+  }
+  @include e(single) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    @include tab {
+      margin-bottom: 40px;
+    }
+    @include mobileMd {      
+      margin-bottom: 30px;
+    }
+    @include mobileSm {
+      display: block;
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+    @include m(icon) {
+      display: inline-flex;
+      margin-right: 25px;
+      min-width: 80px;
+      width: 80px;
+      height: 80px;
+      @include rfs(30px);
+      border-radius: 100%;
+      justify-content: center;
+      align-items: center;
+      @include mobileSm {
+        margin: 0 0 20px;
+      }
+      span {
+        font-weight: 500;
+      }
+      &.primary {        
+        color: $primaryColor;
+        background-color: rgba($primaryColor, 0.10);
+      }
+      &.pink {        
+        color: $pink;
+        background-color: rgba($pink, 0.10);
+      }
+      &.success {        
+        color: $successColor;
+        background-color: rgba($successColor, 0.10);
+      }
+    }
+    @include m(title) {
+      @include rfs(24px);
+      margin: 0 0 8px;
+    }
+    @include m(desc) {
+      @include rfs(16px);
+      margin: 0;
+    }
+  }
+  .btn-part {
+    @include mobileSm {
+      text-align: center
+    }
+  }
+}
+
+.a-section-title {
+  @include rfs(42px);
+  line-height: 1.24;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.affiliate-process {
+  padding: 110px 0 40px;
+  @include tab {
+    padding-top: 72px;
+  }
+  @include e(single) {
+    margin-bottom: 65px;
+    @include tab {
+      max-width: 370px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+    h4 {
+      @include rfs(22px);
+      line-height: 1.18;
+      font-weight: 500;
+      margin-bottom: 13px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: $darkDeep;
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+  @include e(icon) {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $darkColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    @include tab {
+      margin: 0 auto 25px;
+    }
+    img {
+      max-width: 40px;
+    }
+  }
+  @include e(btn) {
+    margin-top: 35px;
+  }
+}
+
+.gdnt-1 {
+  background: linear-gradient(rgba(#fc5c9c, 0.8), rgba(#7b43ff, 0.8));
+  box-shadow: 0 10px 10px rgba(#9c69f8, 0.2);
+}
+.gdnt-2 {
+  background: linear-gradient(rgba(#fa8b0c, 0.8), rgba(#ff4e95, 0.8));
+  box-shadow: 0 10px 10px rgba(#fa7bb0, 0.2);
+}
+.gdnt-3 {
+  background: linear-gradient(rgba(#30cdff, 0.8), rgba(#4353ff, 0.8));
+  box-shadow: 0 10px 10px rgba(#667bff, 0.2);
+}
+
+.affiliate-guideline {  
+  padding: 100px 0 90px;
+  @include tab {
+    padding: 72px 0 70px;
+  }
+  @include e(contents) {
+    position: relative;
+    z-index: 1;
+  }
+  @include e(list) {
+    h3 {
+      @include rfs(36px);
+      line-height: 1.1;
+      font-weight: 500;
+      margin: 0 0 32px;
+      @include tab {
+        margin: 0 0 20px;
+      }
+      svg {
+        margin-left: 10px;
+      }
+    }
+    ul {
+      margin: 0 0 0 -5px;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: flex-start;        
+        @include rfs(18px);
+        &:not(:last-child) {
+          margin-bottom: 17px;
+          @include tab {
+            margin-bottom: 10px;
+          }
+        }
+        i {
+          display: inline-block;
+          margin-right: 7px;
+          font-size: 20px;
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+    @include m(one) {
+      margin-right: 30px;
+      @include mobileLg {
+        margin: 0 0 30px;
+      }
+      h3 span,
+      ul li i {
+        color: $successColor;
+      }
+    }
+    @include m(two) {
+      h3 span,
+      ul li i {
+        color: $pink;
+      }
+    }
+  }
+}
+
+.affiliate-faq {
+  padding: 105px 0 110px;
+  @include tab {
+    padding: 73px 0 78px;
+  }
+  @include e(contents) {
+    .card {
+      border: 1px solid #ebeef5 !important;
+      border-radius: 6px !important;
+      box-shadow: 0 5px 15px rgba(#aeb9cd, 0.05);
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      .card-header {
+        padding: 0 !important;
+        a {
+          font-size: 18px;
+          font-weight: 500;
+          color: #151826;
+          padding: 10px 30px 15px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          &:before {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            position: absolute;
+            right: 10px;
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: currentColor;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+            -webkit-mask-image:  url(../../assets/svg/icons/unicons/angle-down.svg);
+            mask-image: url(../../assets/svg/icons/unicons/angle-down.svg);
+          }
+          &.collapsed {
+            &:before {
+              -webkit-mask-image:  url(../../assets/svg/icons/unicons/angle-up.svg);
+            mask-image: url(../../assets/svg/icons/unicons/angle-up.svg);
+            }
+          }
+        }
+      }
+      .card-body {
+        padding: 20px 30px;
+      }
+    }
+  }
+}
+
+.affiliate-cta {
+  padding-bottom: 110px;
+  @include tab {
+    padding-bottom: 80px;
+  }
+  h3 {
+    @include rfs(42px);
+    font-weight: 500;
+    line-height: 1.28;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,419 @@
+/*---------------------------------------------
+#. Banner
+-----------------------------------------------*/
+.has-discount-banner {
+  .sovware-banner {
+    &.pt-200 {
+      @include medium {
+        padding-top: 120px;
+      }
+      @include tab {
+        padding-top: 100px;
+      }
+      @include mobileLg {
+        padding-top: 80px;
+      }
+    }
+  }
+}
+.sovware-banner {
+  &.pt-200 {
+    @include medium {
+      padding-top: 160px;
+    }
+    @include tab {
+      padding-top: 120px;
+    }
+    @include mobileLg {
+      padding-top: 100px;
+    }
+  }
+  &.pb-60 {
+    @include medium {
+      padding-bottom: 0px;
+    }
+  }
+  @include e(img) {
+    .shade-bg {
+      position: absolute;
+      right: -500px;
+      height: 160%;
+      width: 170%;
+      top: -280px;
+      z-index: 1;
+      background-image: url("../../assets/img/circle-shape-light.png");
+      background-size: cover;
+      @include xLarge {
+        height: 180%;
+      }
+      @include large {
+        height: 190%;
+      }
+      @include medium {
+        display: none;
+      }
+    }
+    &.grid--out {
+      img {
+        position: relative;
+        z-index: 2;
+        max-width: 136%;
+        margin-top: -25px;
+        aspect-ratio: 1.5;
+        @include xLarge {
+          max-width: 120%;
+        }
+        @include large {
+          max-width: 100%;
+          margin-top: 0;
+        }
+        @include tab {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  @include e(content) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include rfs(52px);
+      font-weight: 600;
+      line-height: 1.19;
+      margin-bottom: 26px;
+      br {
+        @include medium {
+          display: none;
+        }
+      }
+      .text-lighter {
+        color: #bcb2ce;
+      }
+      br {
+        @include large {
+          display: none;
+        }
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      br {
+        @include mobileLg {
+          display: none;
+        }
+      }
+    }
+    .badge {
+      font-size: 16px;
+      font-weight: 500;
+      color: #3b3f53;
+      @include mobileMd {
+        text-align: left;
+        line-height: 1.35;
+        white-space: break-spaces;
+      }
+      .digit {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Career Banner
+.career-intro {
+  .sovware-banner {
+    @include e(content) {
+      .display-2 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 24px;
+      }
+    }
+    @include e(img) {
+      margin: 0px 0 -30px -40px;
+      @include tab {
+        margin: 30px 0 0 0;
+      }
+      img {
+        width: 100%;
+      }
+      .shade-bg {
+        position: absolute;
+        right: -150px;
+        height: 140%;
+        width: 170%;
+        top: -150px;
+        z-index: -1;
+        background-image: url("../../assets/img/circle-shape.png");
+        background-size: cover;
+        @include tab {
+          display: none;
+        }
+      }
+      &.grid--out {
+        img {
+          max-width: 110%;
+          position: relative;
+          right: -90px;
+          @include medium {
+            width: 100%;
+            margin-top: 14px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Plugin Banner
+.has-discount-banner {
+  .wpwax-product-banner {
+    &.pt-190 {
+      @include large {
+        padding-top: 160px;
+      }
+      @include mobileLg{
+        padding-top: 110px;
+      }
+    }
+  }
+}
+
+.wpwax-product-banner {
+  &.pt-190 {
+    @include large {
+      padding-top: 120px;
+    }
+  }
+  &.pb-70 {
+    @include large {
+      padding-bottom: 50px;
+    }
+  }
+  .banner-shape {
+    @include medium {
+      height: 100%;
+    }
+  }
+  @include e(content) {
+    p {
+      font-size: 20px;
+      margin-bottom: 0;
+      @include medium {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.wpwax_plugin-branchNode-area {
+  @include medium {
+    margin-top: 40px;
+  }
+}
+
+/* Single Product Banner */
+.download-template-pgin-legal-page-pro {
+  .wpwax-signle-product-banner {
+    &.wpwax-single-product-banner-video {
+      padding: 190px 0 254px;
+      @include large {
+        padding: 140px 0 240px;
+      }
+      @include mobileMd {
+        padding: 80px 0 240px;
+      }
+    }
+    &.page-template {
+      padding: 212 0 255px;
+      .wpwax-offer-badge {
+        display: inline-block;
+        margin: 20px 0 40px;
+      }
+      .wpwax-signle-product-banner__button {
+        a {
+          padding: 0 1.75rem;
+          min-height: 56px;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+}
+.wpwax-signle-product-banner {
+  padding: 212px 0 255px;
+  @include large {
+    padding: 130px 0 255px;
+  }
+  @include medium {
+    padding: 160px 0 255px;
+  }
+  @include tab {
+    padding: 140px 0 255px;
+  }
+  @include mobileMd {
+    padding: 100px 0 255px;
+  }
+  &.theme-2 {
+    padding: 190px 0 135px;
+    @include large {
+      padding: 140px 0 95px;
+    }
+    @include mobileLg {
+      padding: 120px 0 75px;
+    }
+  }
+  &.wpwax-single-product-banner-video {
+    padding: 190px 0 314px;
+    @include large {
+      padding: 140px 0 280px;
+    }
+    @include mobileLg {
+      padding: 120px 0 245px;
+    }
+    &.page-template {
+      padding: 100px 0 244px;
+      @include mobileLg {
+        padding: 40px 0 245px;
+      }
+    }
+  }
+  &.page-template {
+    padding: 145px 0 255px;
+    .wpwax-signle-product-banner__text{
+      .colored-text{
+        svg{
+          position: relative;
+          top: -4px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .wpwax-offer-badge {
+      display: inline-block;
+      margin: 18px 0 40px;
+      svg {
+        @include mobileMd {
+          width: 340px;
+        }
+        @include mobileSm {
+          width: 240px;
+        }
+      }
+    }
+    .wpwax-signle-product-banner__button {
+      a {
+        padding: 0 2.285rem;
+        min-height: 56px;
+        line-height: 56px;
+        &.btn-success{
+          background-color: #00b141 !important;
+          i {
+            &:before {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.wpwax-single-product-banner-bg {
+    background-image: linear-gradient(#ffffff, #f9f9fe);
+  }
+  @include e(text) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 42px;
+      font-weight: 600;
+      max-width: 610px;
+      margin: 0 auto;
+      color: $darkColor;
+      @include tab {
+        font-size: 36px;
+      }
+      @include mobileLg {
+        font-size: 28px;
+      }
+      @include mobileXs {
+        font-size: 26px;
+      }
+    }
+    .display-2 {
+      font-size: 48px;
+      line-height: 1.15;
+      max-width: 690px;
+      @include tab {
+        font-size: 40px;
+      }
+      @include mobileMd {
+        font-size: 32px;
+      }
+      @include mobileXs {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: #484d61;
+      margin: 15px 0 32px;
+      @include medium {
+        font-size: 18px;
+      }
+    }
+  }
+  @include e(button) {
+    margin: -4px;
+    a {
+      margin: 4px;
+      display: inline-flex;
+      align-items: center;
+      i {
+        margin-right: 3px;
+        font-size: 18px;
+        position: relative;
+        top: 0;
+      }
+    }
+  }
+  .wpwax-signle-product-banner__text {
+    &.theme-p-g-c-u {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 48px;
+        max-width: 100%;
+        @include medium {
+          font-size: 38px;
+        }
+        @include mobileLg {
+          font-size: 32px;
+        }
+      }
+      p {
+        br {
+          @include tab {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

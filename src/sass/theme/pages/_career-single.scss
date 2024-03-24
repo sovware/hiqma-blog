@@ -1,0 +1,209 @@
+/*---------------------------------------------
+#. Career Single
+-----------------------------------------------*/
+.single-career-top {
+  margin-bottom: 65px;
+  @include tab {
+    margin-bottom: 40px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: -4px;
+    font-weight: 500;
+  }
+  .btn-link {
+    font-size: 14px;
+    color: #7b839b !important;
+    margin-bottom: 60px;
+    @include tab {
+      margin-bottom: 40px;
+    }
+    &:hover {
+      @extend .color-primary;
+      svg path,
+      i {
+        @extend .color-primary;
+        fill: $primaryColor;
+      }
+    }
+    i,
+    svg,
+    img {
+      margin: 0 8px 0 0;
+    }
+  }
+  .circular-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      padding-left: 10px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        content: "";
+        @extend .bg-light-normal;
+      }
+      span {
+        font-size: 15px;
+        color: #7b839b;
+      }
+    }
+  }
+  .single-career-title {
+    .btn-apply{
+      min-width: 140px;
+    }
+    @include mobileLg {
+      flex-flow: column;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.job-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 18px;
+  }
+  ul {
+    padding: 0 0 0 16px;
+    list-style: none;
+    margin: 0 0 55px;
+    li {
+      font-size: 18px;
+      padding-left: 16px;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        content: "";
+        @extend .bg-dark;
+      }
+    }
+  }
+}
+
+.job-apply-form {
+  display: none;
+  position: relative;
+  border-radius: 10px;
+  padding: 60px;
+  box-shadow: 0 10px 50px rgba($lightColor, 0.2);
+  margin-top: 150px;
+  @include tab {
+    margin-top: 80px;
+  }
+  @include mobileLg {
+    padding: 30px;
+  }
+  @include mobileSm {
+    margin-top: 60px;
+  }
+  @extend .bg-white;
+  .shape.shape-top {
+    right: -100px;
+    top: -80px;
+    @include tab {
+      display: none;
+    }
+  }
+  .shape.shape-middle {
+    right: -180px;
+    top: 40%;
+    @include tab {
+      display: none;
+    }
+    img {
+      max-width: 322px;
+    }
+  }
+  .shape.shape-bottom {
+    left: -180px;
+    bottom: 20%;
+    @include tab {
+      display: none;
+    }
+    img {
+      max-width: 322px;
+    }
+  }
+  .apply-form-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    @include mobileLg {
+      margin-bottom: 30px;
+    }
+  }
+  .form-group {
+    margin-bottom: 30px;
+    label {
+      width: 100%;
+    }
+    .btn-browse {
+      height: 34px;
+      border-radius: 8px;
+      line-height: 32px;
+    }
+    .wpcf7-submit {
+      margin-top: 30px;
+      font-size: 15px;
+      padding: 0 30px;
+      width: auto;
+      background-color: $pink;
+      @include mobileLg {
+        margin-top: 10px;
+      }
+    }
+    textarea {
+      min-height: 130px;
+      resize: none;
+    }
+    .browse-wrap {
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: 3px dashed #ebeef5;
+    }
+  }
+  .file-cv{
+    display: flex;
+    align-items: center;
+    border: 3px dashed #EBEEF5;
+    input[type=file]{
+      height: auto;
+      &:focus{
+        outline: 0 none;
+        border: 0 none;
+      }
+    }
+  }
+}

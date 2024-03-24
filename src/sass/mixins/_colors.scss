@@ -1,0 +1,32 @@
+
+
+// Color
+@mixin colors($color, $class){
+    .color-#{$class}{
+        color: $color;
+    }
+    .bg-#{$class}{
+        background-color: $color !important;
+    }
+    .outline-#{$class}{
+        border: 1px solid #{$color};
+        color: #{$color}
+    }
+    .active-color-#{$class}{
+        label input:checked + span {
+            background: #{$color};
+            border-color: #{$color};
+        }   
+    }
+
+    .btn-#{$class}{
+        background-color: #{$color};
+        border-color: #{$color};
+    }
+}
+
+// Generating necessery color css using $theme-colors
+
+@each  $key, $color in ($theme-colors) {
+    @include colors($color,$key);
+}

@@ -1,0 +1,369 @@
+/*------------------------------------
+#. Button
+------------------------------------*/
+
+.btn {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0 none;
+    font-family: 'CircularStd';//cahnge
+    font-weight: 500;
+    line-height: 48px;
+    padding: 0 1.46rem;
+    transition: $transition-base;
+    &:hover {
+        border: 0 none;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0;
+    }
+    &.active {
+        &:focus {
+            outline: none;
+            box-shadow: 0 0;
+        }
+    }
+}
+
+
+/* Button Type */
+
+.btn {
+    &.btn-primary {
+        @extend .color-white;
+        @extend .bg-primary;
+    }
+    &.btn-secondary {
+        @extend .color-white;
+        @extend .bg-secondary;
+    }
+    &.btn-info {
+        @extend .color-white;
+        @extend .bg-info;
+    }
+    &.btn-success {
+        @extend .color-white;
+        @extend .bg-success;
+    }
+    &.btn-warning {
+        @extend .color-white;
+        @extend .bg-warning;
+    }
+    &.btn-danger {
+        @extend .color-white;
+        @extend .bg-danger;
+    }
+    &.btn-pink {
+        @extend .color-white;
+    }
+    &.btn-white {
+        @extend .bg-white;
+    }
+}
+
+
+/* Button Transparent */
+
+.btn {
+    &.btn-transparent {
+        border: 0 none;
+        &.btn-primary {
+            background-color: #f2edff !important;
+            @extend .color-primary;
+            &:hover {
+                @extend .color-white;
+                background-color: #7338fc !important;
+            }
+        }
+        &.btn-success {
+            background-color: #e6f7e9 !important;
+            @extend .color-success;
+            &:hover {
+                @extend .color-white;
+                background-color: $successColor !important;
+            }
+        }
+        &.btn-secondary {
+            background-color: #e0f7fa !important;
+            @extend .color-secondary;
+            &:hover {
+                @extend .color-white;
+                background-color: $secondaryColor !important;
+            }
+        }
+        &.btn-info {
+            background-color: #0090fd20 !important;
+            @extend .color-info;
+            &:hover {
+                @extend .color-white;
+                background-color: $infoColor !important;
+            }
+        }
+    }
+}
+
+
+/* Button Outlined */
+
+.btn {
+    &.btn-outlined {
+        background-color: transparent !important;
+        border-width: 1px;
+        border-style: solid;
+        &:hover {
+            @extend .color-white;
+            border-width: 1px;
+            border-style: solid;
+            &.btn-primary {
+                @extend .bg-primary;
+            }
+            &.btn-secondary {
+                @extend .bg-secondary;
+            }
+            &.btn-success {
+                @extend .bg-success;
+            }
+            &.btn-info {
+                @extend .bg-info;
+            }
+            &.btn-warning {
+                @extend .bg-warning;
+            }
+            &.btn-danger {
+                @extend .bg-danger;
+            }
+            &.btn-dark {
+                @extend .bg-dark;
+            }
+        }
+        &.btn-primary {
+            @extend .color-primary;
+        }
+        &.btn-secondary {
+            @extend .color-secondary;
+        }
+        &.btn-success {
+            @extend .color-success;
+        }
+        &.btn-info {
+            @extend .color-info;
+        }
+        &.btn-warning {
+            @extend .color-warning;
+        }
+        &.btn-danger {
+            @extend .color-danger;
+        }
+        &.btn-dark {
+            @extend .color-dark;
+        }
+        &.btn-white {
+            border: 1px solid $graydeep;
+            transition: 0.35s;
+            @extend .color-dark;
+            &:hover {
+                opacity: 0.8;
+                @extend .color-dark;
+            }
+        }
+    }
+}
+
+
+/* Button Raised */
+
+.btn {
+    &.btn-raised {
+        &.btn-primary {
+            box-shadow: 0 10px 15px rgba($primaryColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($primaryColor, 0.2);
+            }
+        }
+        &.btn-secondary {
+            box-shadow: 0 10px 15px rgba($secondaryColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($secondaryColor, 0.2);
+            }
+        }
+        &.btn-success {
+            box-shadow: 0 10px 15px rgba($successColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($successColor, 0.2);
+            }
+        }
+        &.btn-info {
+            box-shadow: 0 10px 15px rgba($infoColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($infoColor, 0.2);
+            }
+        }
+        &.btn-warning {
+            box-shadow: 0 10px 15px rgba($warningColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($warningColor, 0.2);
+            }
+        }
+        &.btn-danger {
+            box-shadow: 0 10px 15px rgba($dangerColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($dangerColor, 0.2);
+            }
+        }
+        &.btn-dark {
+            box-shadow: 0 10px 15px rgba($darkColor, 0.1);
+            &:hover {
+                box-shadow: 0 10px 20px rgba($darkColor, 0.2);
+            }
+        }
+        &.btn-pink {
+            @extend .color-white;
+            box-shadow: 0 8px 20px rgba($pink, 0.15);
+            &:hover {
+                box-shadow: 0 10px 25px rgba($pink, 0.2);
+            }
+        }
+    }
+}
+
+
+/* Button Shape */
+
+.btn {
+    &.btn-round {
+        border-radius: 33px;
+    }
+}
+
+
+/* Button Size */
+
+.btn {
+    &.btn-lg {
+        font-size: 16px;
+        height: 55px;
+        line-height: 1.5;
+    }
+    &.btn-md {
+        line-height: 3.1;
+    }
+    &.btn-sm {
+        font-size: 14px;
+        height: 42px;
+        padding: 0 18px;
+        line-height: 2.8;
+    }
+    &.btn-xs {
+        font-size: 14px;
+        font-weight: 400;
+        height: 35px;
+        padding: 0 15px;
+        line-height: 2.5;
+    }
+}
+
+// Button Link
+.btn-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    transition: 0.36s ease-in;
+    @extend .color-primary;
+    &:hover {
+        letter-spacing: 1.2px;
+        &:after {
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.color-pink {
+        &:after {
+            @extend .bg-pink;
+        }
+        svg path,
+        i {
+            fill: $pink;
+            @extend .color-pink;
+        }
+    }
+    &.color-success {
+        &:after {
+            @extend .bg-success;
+        }
+        svg path,
+        i {
+            fill: $successColor;
+            @extend .color-success;
+        }
+    }
+    &.color-warning {
+        &:after {
+            @extend .bg-warning;
+        }
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0%;
+        height: 2px;
+        opacity: 0;
+        visibility: hidden;
+        content: "";
+        transition: 0.5s ease-in;
+        @extend .bg-primary;
+    }
+    i,
+    span,
+    svg,
+    img {
+        margin: 2px 0 0 10px;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-more {
+    font-weight: 500;
+    @extend .color-primary;
+}
+
+a.theme-back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 0 5px 50px rgba(146, 155, 177, 0.15);
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    text-align: center;
+    line-height: 2;
+    text-decoration: none;
+    transition: all 0.25s ease-in;
+    @extend .color-primary;
+    @extend .bg-white;
+    &:hover {
+        @extend .bg-primary;
+        @extend .color-white;
+    }
+    @include mobileLg {
+        bottom: 138px;
+    }
+    i {
+        font-size: 30px;
+        &:after {
+            margin: 0;
+            animation: ScrollTopAnim 1.5s ease-in-out 0s infinite;
+        }
+    }
+}

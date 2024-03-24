@@ -1,0 +1,21 @@
+/*-------------------------------------
+#. Card
+---------------------------------------*/
+
+.card{
+    border-color: $graydeep;
+    @extend .bg-white;
+    .card-header{
+        margin-bottom: -1px;
+        border-color: $graydeep;
+        @extend .bg-white;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            margin: 0;
+        }
+    }
+}

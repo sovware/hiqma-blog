@@ -1,0 +1,48 @@
+.award-winning {
+    display: flex;
+    align-items: center;
+    padding: 57px 70px;
+    background-color: rgba(255, 52, 107, 0.06);
+    border-radius: 15px;
+    gap: 10px 50px;
+
+    @include tab{
+        padding: 30px 40px;
+        gap: 10px 30px;
+    }
+    @include mobileLg{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px 15px;
+    }
+    
+    &__left{
+        img{
+            max-width: 262px;
+            height: 92px;
+            display: flex;
+            @include tab{
+                max-width: 220px;
+            }
+        }
+    }
+    &__right {
+        h2 {
+            @include rfs(42px);
+            line-height: 52px;
+            font-weight: 500;
+            margin-bottom: 13px;
+            font-family: 'Bergen Neue';
+            @include mobileMd{
+                line-height: 38px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #4B5064;
+            font-family: 'Bergen Neue';
+        }
+    }
+}

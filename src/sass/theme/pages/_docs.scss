@@ -1,0 +1,39 @@
+/* Doc Toc style */
+.sticky-toc-container{
+    .close-toc{
+        display: none;
+    }
+}
+
+.betterdocs-el-single-sidebar .sticky-toc-container .betterdocs-toc, 
+.betterdocs-single-layout1 .sticky-toc-container .betterdocs-toc{
+    overflow-y: auto;
+}
+
+.sticky-toc-container{
+    .betterdocs-toc>.toc-title{
+        margin-bottom: 12px;
+    }
+}
+
+.betterdocs-toc {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    > .toc-title{
+        color: $darkColor;
+    }
+    >.toc-list{
+        li{
+            a{
+                &:before{
+                    font-size: 14px;
+                }
+            }
+        }
+        a{
+            font-weight: 500;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+}

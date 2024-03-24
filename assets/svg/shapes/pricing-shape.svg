@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 1920 748" style="height: 100%">
+  <defs>
+    <linearGradient id="pricing-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f6f6fe"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_4799" data-name="Path 4799" d="M0-158H1920V590H0Z" transform="translate(0 159.999)" fill="url(#pricing-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(0 -1.999)" clip-path="url(#clip-path)">
+    <path id="Path_3532" data-name="Path 3532" d="M3220-7049.387S3920-6442.351,5136-6815s0-627,0-627H3220Z" transform="translate(-3220 7443.999)" fill="url(#pricing-gradient)"/>
+  </g>
+</svg>

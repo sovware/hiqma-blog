@@ -1,0 +1,106 @@
+/*-------------------------------------
+#. CTA
+---------------------------------------*/
+.cta-box {
+  border-radius: 6px;
+  padding: 68px 30px 80px 30px;
+  @include tab {
+    padding: 30px;
+  }
+  &.gradient-bg-primary {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #F6EFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #F6EFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #F6EFFF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeff3', endColorstr='#F6EFFF',GradientType=0 );
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+    margin-bottom: 24px;
+    br {
+      @include mobileLg {
+        display: none;
+      }
+    }
+  }
+  p{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .cta-content {
+    @include mobileLg {
+      flex-flow: column;
+    }
+  }
+  .btn-list{
+    margin: 30px -5px -5px;
+    .btn {
+      padding: 0 1.544rem;
+      margin: 5px;
+    }
+  }
+}
+
+// CTA Theme -2
+.cta-box {
+  &.gradient-reverse-bg {
+    background: #ffeff3;
+    background: -moz-linear-gradient(bottom, #ffeff3 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(bottom, #ffeff3 0%, #ffffff 100%);
+    background: linear-gradient(to top, #ffeff3 0%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeff3', endColorstr='#ffffff',GradientType=0 );
+  }
+  &.theme-2 {
+    .cta-content {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 30px;
+        @include mobileLg {
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 25px;
+        @include mobileLg {
+          font-size: 18px;
+          br {
+            display: none;
+          }
+        }
+      }
+      @include e(left) {
+        text-align: right;
+        min-width: 390px;
+        margin-right: 60px;
+        @include medium {
+          min-width: 300px;
+        }
+        @include mobileLg {
+          min-width: 100%;
+          text-align: left;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+      @include e(right) {
+        .display-3 {
+          br {
+            @include tab {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
