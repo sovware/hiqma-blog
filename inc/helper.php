@@ -162,7 +162,7 @@ class Helper {
 	}
 
 	public static function get_nav_menu_args($name) {
-		$nav_menu_args = array('theme_location' => $name, 'container' => 'nav', 'fallback_cb' => false, 'menu_class' => $name);
+		$nav_menu_args = array('theme_location' => $name, 'container' => 'header_menu navbar-nav', 'fallback_cb' => false, 'menu_class' => $name);
 		return $nav_menu_args;
 	}
 

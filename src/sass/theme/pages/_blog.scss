@@ -261,6 +261,9 @@
         margin: 18px 0 16px;
         a {
           color: $darkColor;
+          &:hover{
+            color: var(--theme-bg);
+          }
         }
       }
       p {
@@ -334,6 +337,9 @@
         margin-top: 23px;
         a {
           color: $darkColor;
+          &:hover{
+            color: var(--theme-bg);
+          }
         }
       }
     }

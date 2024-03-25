@@ -57,6 +57,8 @@ class Scripts {
 		wp_register_script( 'magnific-popup', Helper::get_vendor_assets( 'magnific-popup/jquery.magnific-popup.min.js' ), array( 'jquery' ), $this->version, true );
 		wp_register_style( 'magnific-popup', Helper::get_vendor_assets( 'magnific-popup/magnific-popup.css' ), array(), $this->version, 'all' );
 
+		//Animation
+		wp_register_script( 'waves', Helper::get_vendor_assets( 'animation/waves.js' ), array( 'jquery' ), $this->version, true );
 
 		// Magnific Popup
 		wp_register_script( 'jarallax', Helper::get_vendor_assets( 'jarallax/jarallax.min.js' ), array( 'jquery' ), $this->version, true );
@@ -115,6 +117,7 @@ class Scripts {
 
 			wp_enqueue_style( 'magnific-popup' );
 			wp_enqueue_script( 'magnific-popup' );
+			wp_enqueue_style( 'waves' );
 			wp_enqueue_style( 'jarallax' );
 			wp_enqueue_script( 'jarallax' );
 		}, 14 );

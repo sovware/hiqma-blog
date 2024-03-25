@@ -81,11 +81,15 @@
 		}
 
 		// Headroom js
+
 		var header = document.getElementById("site-header");
+		if(header){
+			var headroom = new Headroom(header);
+			// initialise
+			headroom.init();
+		}
 		// construct an instance of Headroom, passing the element
-		var headroom = new Headroom(header);
-		// initialise
-		headroom.init();
+		
 
 		// Copy
 		function copyToClipboard(text) {
@@ -438,5 +442,34 @@
 	}
 	
 	mouseClickedBox();
+
+	let resize = true;
+    $(window).scroll(function() {
+        var nav = $('#navbarMain');
+        var top = 50;
+        if ($(window).scrollTop() >= top && resize) {
+            $("header").addClass('swap_navbar');
+        } else if(resize) {
+            $("header").removeClass('swap_navbar');
+        }
+    });
+
+    $(window).on("load", (function() {
+        if($(window).innerWidth() + 10 < 769) {
+            $("header").addClass('swap_navbar');
+            resize = false;
+        }
+        else {
+            $("header").removeClass('swap_navbar');
+            resize = true;
+        }
+    }));
+
+    $(window).on("load", (function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 20 ) {
+        $("header").addClass('swap_navbar');
+    }
+    }) )
 
 })(jQuery);

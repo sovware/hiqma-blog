@@ -29,7 +29,7 @@ namespace Sovware\Theme;
             <div class="offcanvas-menu-inner">
             </div>
         </div>
-        <header id="site-header" class="site-header" data-headroom>
+        <header id="site-header" class="site-header" headroomdata->
             <div class="container">
                 <?php get_template_part( 'template-parts/content-header-helpgent' ); ?>
             </div>

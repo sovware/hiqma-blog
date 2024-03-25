@@ -371,3 +371,150 @@
         }
     }
 }
+
+
+/* Footer */
+.footer-area {
+    .footer__logo {
+        max-width: 152px;
+        width: 100%;
+        height: 43px;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        p {
+            color: #595B5F;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.6px;
+            margin-bottom: 23px;
+            margin-right: 50px;
+        }
+    }
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px 30px;
+    flex-wrap:wrap;
+    .multi-currency{
+        >li{
+            >a{
+                color:#595B5F;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.08px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                &:hover{
+                    color: var(--theme-bg);
+                }
+            }
+        }
+    }
+    .term-box{
+        p{
+            color: #787878;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.6px;
+        }
+    }
+}
+
+
+
+/* Widget */
+.widget-menu-item {
+    .widget-title {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22.08px;
+        margin-bottom: 17px;
+    }
+    .widget-menu{
+        li{
+            a{
+                color: #787878;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                &:hover{
+                    color: var(--theme-bg);
+                }
+            }
+        }
+    }
+
+    .payment-method-img{
+        margin: -8px;
+        width: 100%;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+
+.footer-area .foot_menu {
+    display: flex !important;
+    width: 100%;
+  }
+  
+  .footer-area .footm {
+    width: 50%;
+  }
+  
+  .footer-area .footm a {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #0d233e;
+    text-transform: capitalize;
+  }
+  
+  .footer-area .dropdown-menu a {
+    color: #5d646d;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .footer-area .section-block {
+    height: 1px;
+    background-color: rgba(128, 137, 150, 0.1);
+  }
+  
+  .social-profile li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  .social-profile li a:hover {
+    opacity: 0.7;
+  }
+  
+  .social-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
