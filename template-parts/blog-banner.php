@@ -13,8 +13,8 @@ namespace Sovware\Theme;
 	<div class="container">
 		<div class="text-center row justify-content-center">
 			<div class="col-lg-6">
-				<h1 class="display-2">wpWax Blog</h1>
-				<p class="m-0">Get free WordPress related resources, tips, and tricks to help you get started and grow a successful online business using WordPress.</p>
+				<h1 class="display-2">HiqmaTrip Blog</h1>
+				<p class="m-0">Let us help you plan your next journey — the one that will leave a lifetime of memories.</p>
 			</div>
 		</div>
 		<div class="row pt-90 align-items-center">

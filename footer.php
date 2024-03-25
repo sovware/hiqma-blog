@@ -39,6 +39,12 @@ namespace Sovware\Theme;
                                  <i class="lab la-linkedin-in"></i>
                               </a>
                            </li>
+                           <!-- WHATSAPP -->
+                           <li>
+                              <a class="bg-whatsapp waves-effect" href="https://wa.link/8ee9xa" target="_blank">
+                                 <i class="lab la-whatsapp"></i>
+                              </a>
+                              </li>
                            <!-- INSTAGRAM -->
                            <li>
                               <a class="bg-instagram" href="https://www.instagram.com/hiqmatrip/" target="_blank">
