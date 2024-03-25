@@ -85,6 +85,8 @@ class Scripts {
 
 		// Headroom
 		wp_enqueue_script( 'headroom' );
+
+		wp_enqueue_script( 'waves' );
 		
 		if ( is_single() && 'download' == get_post_type() ) {
 			// magnific-popup
@@ -117,7 +119,6 @@ class Scripts {
 
 			wp_enqueue_style( 'magnific-popup' );
 			wp_enqueue_script( 'magnific-popup' );
-			wp_enqueue_style( 'waves' );
 			wp_enqueue_style( 'jarallax' );
 			wp_enqueue_script( 'jarallax' );
 		}, 14 );
