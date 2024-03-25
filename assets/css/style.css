@@ -5645,11 +5645,16 @@ a.theme-back-to-top i:after {
     text-align: center;
   }
 }
+.main-header .site-branding a svg,
 .main-header .site-branding a img {
   width: auto;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  max-width: 130px;
+  max-width: 140px;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 .site-header {

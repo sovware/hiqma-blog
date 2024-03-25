@@ -10,10 +10,17 @@
     text-align: center;
   }
 
-  a img {
-    width: auto;
-    transition: all 0.5s ease-out;
-    max-width: 130px;
+  a {
+    svg,
+    img {
+      width: auto;
+      transition: all 0.5s ease-out;
+      max-width: 140px;
+      min-height: 50px;
+      max-height: 50px;
+      padding: 4px;
+      border-radius: 6px;
+    }
   }
 }
 
